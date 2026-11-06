@@ -15,6 +15,7 @@ abstract class E2ETestCase extends TestCase
 
     /** @var array<int, string> */
     private array $mutableTables = [
+        "oc_t_business_profile",
         "oc_t_audit_log",
         "oc_t_im_messages",
         "oc_t_im_threads",
