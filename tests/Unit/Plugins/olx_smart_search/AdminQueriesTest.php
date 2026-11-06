@@ -32,4 +32,14 @@ final class AdminQueriesTest extends DatabaseTestCase
         $this->assertStringNotContainsString("Truncate Log", $source);
         $this->assertStringNotContainsString("subaction=purge_all", $source);
     }
+
+    public function testTableIconsAndButtonsStyling(): void
+    {
+        $path = ABS_PATH . "src/Plugins/olx_smart_search/admin_queries.php";
+        $source = (string) file_get_contents($path);
+
+        $this->assertStringNotContainsString("fa-external-link-alt", $source);
+        $this->assertStringNotContainsString("sq-btn-del", $source);
+        $this->assertMatchesRegularExpression('/class=["\']sq-term-badge["\']>\s*<\?php echo osc_esc_html/', $source);
+    }
 }

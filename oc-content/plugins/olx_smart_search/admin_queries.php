@@ -334,15 +334,6 @@ osc_current_admin_theme_path('parts/header.php');
 .sq-btn-view:hover {
     background: #e0f2fe;
 }
-.sq-btn-del {
-    color: #dc2626;
-    background: #fef2f2;
-    border: 1px solid #fecaca;
-    margin-left: 4px;
-}
-.sq-btn-del:hover {
-    background: #fee2e2;
-}
 .sq-pagination {
     display: flex;
     justify-content: space-between;
@@ -589,14 +580,12 @@ osc_current_admin_theme_path('parts/header.php');
                         $pct = ($top_count > 0 && isset($item['i_total'])) ? min(100, round(($item['i_total'] / $top_count) * 100)) : 0;
                         $frontend_search_url = osc_base_url(true) . '?page=search&sPattern=' . urlencode($item['s_search']);
                         $filter_timeline_url = $base_page_url . '&mode=stream&sTerm=' . urlencode($item['s_search']) . '&max_pool=' . $max_pool;
-                        $delete_url = $base_page_url . '&subaction=delete_term&term=' . urlencode($item['s_search']) . '&mode=' . $mode . '&max_pool=' . $max_pool . '&' . osc_csrf_token_url();
                     ?>
                         <tr>
                             <?php if ($mode === 'aggregated'): ?>
                                 <td style="text-align: center; color: #94a3b8; font-weight: 600;"><?php echo $row_idx++; ?></td>
                                 <td>
                                     <span class="sq-term-badge">
-                                        <i class="fa fa-search" style="color:#94a3b8; font-size:11px; margin-right:4px;"></i>
                                         <?php echo osc_esc_html($item['s_search']); ?>
                                     </span>
                                 </td>
@@ -614,13 +603,10 @@ osc_current_admin_theme_path('parts/header.php');
                                 </td>
                                 <td class="sq-actions" style="text-align: right;">
                                     <a href="<?php echo $frontend_search_url; ?>" target="_blank" class="sq-btn-view" title="<?php _e('View search results on website', 'olx_smart_search'); ?>">
-                                        <i class="fa fa-external-link-alt"></i> <?php _e('Test', 'olx_smart_search'); ?>
+                                        <?php _e('Test', 'olx_smart_search'); ?>
                                     </a>
                                     <a href="<?php echo $filter_timeline_url; ?>" class="sq-btn-view" style="color:#6366f1; background:#eef2ff; border-color:#c7d2fe;" title="<?php _e('View timeline of this query', 'olx_smart_search'); ?>">
                                         <i class="fa fa-history"></i>
-                                    </a>
-                                    <a href="<?php echo $delete_url; ?>" class="sq-btn-del" onclick="return confirm('<?php echo osc_esc_js(sprintf(__('Delete all logged instances of "%s"?', 'olx_smart_search'), $item['s_search'])); ?>');" title="<?php _e('Delete term from log', 'olx_smart_search'); ?>">
-                                        <i class="fa fa-times"></i>
                                     </a>
                                 </td>
                             <?php else: ?>
@@ -631,16 +617,12 @@ osc_current_admin_theme_path('parts/header.php');
                                 </td>
                                 <td>
                                     <span class="sq-term-badge">
-                                        <i class="fa fa-search" style="color:#94a3b8; font-size:11px; margin-right:4px;"></i>
                                         <?php echo osc_esc_html($item['s_search']); ?>
                                     </span>
                                 </td>
                                 <td class="sq-actions" style="text-align: right;">
                                     <a href="<?php echo $frontend_search_url; ?>" target="_blank" class="sq-btn-view" title="<?php _e('View search results on website', 'olx_smart_search'); ?>">
-                                        <i class="fa fa-external-link-alt"></i> <?php _e('Test', 'olx_smart_search'); ?>
-                                    </a>
-                                    <a href="<?php echo $delete_url; ?>" class="sq-btn-del" onclick="return confirm('<?php echo osc_esc_js(sprintf(__('Delete all logged instances of "%s"?', 'olx_smart_search'), $item['s_search'])); ?>');" title="<?php _e('Delete term from log', 'olx_smart_search'); ?>">
-                                        <i class="fa fa-times"></i>
+                                        <?php _e('Test', 'olx_smart_search'); ?>
                                     </a>
                                 </td>
                             <?php endif; ?>
