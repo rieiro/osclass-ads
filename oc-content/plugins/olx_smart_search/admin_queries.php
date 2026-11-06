@@ -45,15 +45,7 @@ if ($subaction === 'delete_term') {
     exit;
 }
 
-if ($subaction === 'purge_all') {
-    osc_csrf_check();
-    $purge_sql = sprintf("DELETE FROM %st_latest_searches", DB_TABLE_PREFIX);
-    $comm->query($purge_sql);
-    osc_add_flash_ok_message(__('All search query logs have been purged.', 'olx_smart_search'), 'admin');
-    ob_end_clean();
-    header('Location: ' . $base_page_url);
-    exit;
-}
+
 
 // Parameters
 $sTerm        = trim((string)Params::getParam('sTerm'));
@@ -423,9 +415,7 @@ osc_current_admin_theme_path('parts/header.php');
             <a href="<?php echo osc_admin_base_url(true) . '?page=settings&action=latest_searches'; ?>" class="btn" style="background: #ffffff; border: 1px solid #cbd5e1; color: #334155; font-weight: 600;">
                 <i class="fa fa-cog"></i> <?php _e('Purge / Retention Settings', 'olx_smart_search'); ?>
             </a>
-            <a href="<?php echo $base_page_url . '&subaction=purge_all&' . osc_csrf_token_url(); ?>" class="btn" onclick="return confirm('<?php echo osc_esc_js(__('Are you sure you want to purge all stored search queries?', 'olx_smart_search')); ?>');" style="background: #fef2f2; border: 1px solid #fecaca; color: #dc2626; font-weight: 600;">
-                <i class="fa fa-trash"></i> <?php _e('Truncate Log', 'olx_smart_search'); ?>
-            </a>
+
         </div>
     </div>
 

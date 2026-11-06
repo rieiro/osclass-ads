@@ -23,4 +23,13 @@ final class AdminQueriesTest extends DatabaseTestCase
         $this->assertStringNotContainsString('while ($row = $res->row())', $source);
         $this->assertStringContainsString('$res->result()', $source);
     }
+
+    public function testTruncateLogButtonIsRemoved(): void
+    {
+        $path = ABS_PATH . "src/Plugins/olx_smart_search/admin_queries.php";
+        $source = (string) file_get_contents($path);
+
+        $this->assertStringNotContainsString("Truncate Log", $source);
+        $this->assertStringNotContainsString("subaction=purge_all", $source);
+    }
 }
