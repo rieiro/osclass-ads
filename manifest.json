@@ -1,0 +1,29 @@
+{
+  "name": "Osclass Marketplace",
+  "short_name": "Marketplace",
+  "description": "Buy and sell items, vehicles, and services near you.",
+  "start_url": "/index.php",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6b21a8",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/oc-content/themes/sigma/favicon/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/oc-content/themes/sigma/favicon/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/oc-content/themes/sigma/favicon/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}

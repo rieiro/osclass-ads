@@ -1,0 +1,10 @@
+.phpunit.cache/
+.phpunit.result.cache
+oc-content/uploads/*
+!oc-content/uploads/.gitkeep
+oc-content/downloads/*
+oc-admin/reports/traffic.html
+*.bak
+*.bak2
+*.log
+*.swp

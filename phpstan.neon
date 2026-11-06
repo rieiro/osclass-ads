@@ -1,0 +1,12 @@
+parameters:
+    level: 1
+    phpVersion: 80300
+    reportUnmatchedIgnoredErrors: false
+    bootstrapFiles:
+        - tests/Support/PhpstanTestCaseStub.php
+        - tests/bootstrap.php
+    scanDirectories:
+        - oc-includes/osclass
+    paths:
+        - src/Plugins
+        - tests

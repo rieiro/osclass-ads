@@ -1,0 +1,25 @@
+  <?php if(function_exists('osc_base_url')) { $base_url = osc_base_url(); } else { $base_url = 'http://www.elena.mb-themes.com/'; } ?>
+
+  <img id="hungary-map-block" src="<?php echo $base_url; ?>oc-content/themes/elena/maps/hu-map/main.png" border="0" width="400" height="262" usemap="#hungary-map" alt=""  oncontextmenu="return false"/>
+  <map name="hungary-map" id="hungary-map" oncontextmenu="return false">
+    <area shape="poly" coords="76,103,50,103,25,103,18,70,52,47,97,46,109,79,109,98,106,110,102,114,99,102,92,103" alt="" title="Reg1" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg1"   />
+    <area shape="poly" coords="111,106,109,86,110,69,156,67,165,77,162,88,152,93,144,93,142,102,133,106,128,105,122,109" alt="" title="Reg2" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg2"   />
+    <area shape="poly" coords="173,107,170,98,176,91,188,98,188,108,180,112" alt="" title="Reg3" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg3"   />
+    <area shape="poly" coords="169,103,162,111,168,135,187,133,198,138,207,135,224,143,238,142,234,126,228,110,216,99,206,92,198,81,188,71,177,71,171,64,167,53,153,54,151,68,166,74,168,83,160,89,160,105,170,98,179,92,188,98,191,108,178,113,170,108" alt="" title="Reg4" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg4"   />
+    <area shape="poly" coords="198,80,187,71,169,63,167,47,223,28,232,43,231,58,214,72" alt="" title="Reg5" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg5"   />
+    <area shape="poly" coords="209,93,204,78,228,58,230,48,243,48,258,44,259,70,266,86,268,96,253,106,243,93,225,83" alt="" title="Reg6" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg6"   />
+    <area shape="poly" coords="267,81,257,63,253,45,240,47,229,42,226,23,274,3,321,3,350,8,347,24,333,38,313,38,309,48,292,53,293,68,284,83" alt="" title="Reg7" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg7"   />
+    <area shape="poly" coords="294,54,312,48,316,38,342,31,354,18,383,24,398,63,368,93,333,83,318,72,314,61,304,62" alt="" title="Reg8" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg8"   />
+    <area shape="poly" coords="348,138,362,89,342,82,323,77,316,62,293,60,278,87,288,98,290,120,304,128,311,139" alt="" title="Reg9" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg9"   />
+    <area shape="poly" coords="239,141,235,119,218,98,212,91,229,87,246,98,263,102,276,89,288,104,282,128,271,140,255,152,242,160,233,160" alt="" title="Reg10" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg10"   />
+    <area shape="poly" coords="340,139,310,144,298,139,301,128,285,123,273,138,268,152,258,155,267,169,268,194,280,208,313,209" alt="" title="Reg11" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg11"   />
+    <area shape="poly" coords="280,223,274,196,263,192,264,175,262,158,233,162,225,179,221,193,212,206,238,227" alt="" title="Reg13" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg13"   />
+    <area shape="poly" coords="212,218,209,201,224,191,220,182,228,176,233,160,237,144,231,140,218,145,210,142,201,136,189,143,186,134,170,138,169,156,172,174,168,191,165,216,164,232,168,246,204,234" alt="" title="Reg14" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg14"   />
+    <area shape="poly" coords="158,217,163,194,167,174,167,156,152,167,141,165,127,159,117,172,118,192,122,200,133,193,143,202" alt="" title="Reg15" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg15"   />
+    <area shape="poly" coords="125,145,127,127,114,113,102,115,100,102,80,103,67,108,68,128,67,142,78,158,98,156" alt="" title="Reg16" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg16"   />
+    <area shape="poly" coords="91,234,97,213,115,200,119,178,122,148,103,152,77,163,67,185,45,205,62,227" alt="" title="Reg17" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg17"   />
+    <area shape="poly" coords="168,144,163,119,153,98,137,106,122,108,123,122,128,138,128,156,148,161,161,160" alt="" title="Reg18" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg18"   />
+    <area shape="poly" coords="19,167,33,148,64,138,81,160,72,168,65,185,54,195,41,205,14,187" alt="" title="Reg19" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg19"   />
+    <area shape="poly" coords="12,163,33,150,61,137,69,114,67,105,49,106,33,103,10,103,0,143" alt="" title="Reg20" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg20"   />
+    <area shape="poly" coords="96,248,161,247,161,224,150,216,139,208,133,196,123,195,112,202,98,209,93,228" alt="" title="Reg21" target="_self" href="<?php echo $base_url;?>index.php?page=search&sRegion=Reg21"   />
+  </map>

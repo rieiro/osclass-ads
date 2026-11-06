@@ -1,0 +1,1050 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-10-14 13:27+0200\n"
+"Last-Translator: demo <demo@demo.com>\n"
+"Language-Team: Osclass Core\n"
+"Language: pt_BR\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : ((n != 0 && n % 1000000 == 0) ? 1 : 2);\n"
+"X-Domain: sigma\n"
+"X-Generator: Osclass Core v8.4.0 & PHP Gettext\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: oc-includes/osclass/gui\n"
+"X-Poedit-SearchPath-1: oc-content/themes/sigma\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../oc-includes/osclass/gui/404.php:27 ../oc-content/themes/sigma/404.php:27
+msgid "404"
+msgstr "404"
+
+#: ../oc-includes/osclass/gui/404.php:28 ../oc-content/themes/sigma/404.php:28
+msgid "OOPS! Page Not Found!"
+msgstr "OOPS! Página não encontrada!"
+
+#: ../oc-includes/osclass/gui/404.php:29 ../oc-content/themes/sigma/404.php:29
+msgid "Either something get wrong or the page doesn't exist anymore."
+msgstr "Ou algo deu errado ou a página não existe mais."
+
+#: ../oc-includes/osclass/gui/404.php:31 ../oc-content/themes/sigma/404.php:31
+msgid "Take me home"
+msgstr "Me leva pra casa"
+
+#: ../oc-includes/osclass/gui/alert-form.php:26 ../oc-content/themes/sigma/alert-form.php:31
+#, php-format
+msgid "Alert has been successfully created. A validation email has been sent to %s. Please activate your alert using the link in that email."
+msgstr "O alerta foi criado com sucesso. Um e-mail de validação foi enviado para %s. Ative seu alerta usando o link desse e-mail."
+
+#: ../oc-includes/osclass/gui/alert-form.php:28 ../oc-content/themes/sigma/alert-form.php:33
+msgid "You have sucessfully subscribed to the alert"
+msgstr "Você subscreveu com sucesso o alerta"
+
+#: ../oc-includes/osclass/gui/alert-form.php:31 ../oc-content/themes/sigma/alert-form.php:36
+msgid "You already subscribed to this search for this email"
+msgstr "Você já assinou esta pesquisa com este e-mail"
+
+#: ../oc-includes/osclass/gui/alert-form.php:32 ../oc-includes/osclass/gui/user-change_email.php:74 ../oc-content/themes/sigma/alert-form.php:37 ../oc-content/themes/sigma/user-change_email.php:74
+msgid "The email is not valid"
+msgstr "O e-mail não é válido"
+
+#: ../oc-includes/osclass/gui/alert-form.php:33 ../oc-content/themes/sigma/alert-form.php:38
+msgid "There was a problem with the alert"
+msgstr "Houve um problema com o alerta"
+
+#: ../oc-includes/osclass/gui/alert-form.php:64 ../oc-content/themes/sigma/alert-form.php:69
+msgid "Already subscribed to this search"
+msgstr "Já está inscrito nesta pesquisa"
+
+#: ../oc-includes/osclass/gui/alert-form.php:68 ../oc-content/themes/sigma/alert-form.php:73
+msgid "Subscribe to this search"
+msgstr "Inscrever-se para esta pesquisa"
+
+#: ../oc-includes/osclass/gui/alert-form.php:83 ../oc-content/themes/sigma/alert-form.php:88
+msgid "Subscribe now"
+msgstr "Assine já"
+
+#: ../oc-includes/osclass/gui/contact.php:28 ../oc-content/themes/sigma/contact.php:28
+msgid "Contact us"
+msgstr "Contate-nos"
+
+#: ../oc-includes/osclass/gui/contact.php:37 ../oc-includes/osclass/gui/item-send-friend.php:42 ../oc-includes/osclass/gui/item-sidebar.php:92 ../oc-includes/osclass/gui/item.php:265 ../oc-includes/osclass/gui/user-public-sidebar.php:30 ../oc-content/themes/sigma/contact.php:39 ../oc-content/themes/sigma/item-send-friend.php:47 ../oc-content/themes/sigma/item-sidebar.php:97 ../oc-content/themes/sigma/item.php:285 ../oc-content/themes/sigma/user-public-sidebar.php:30
+msgid "Your name"
+msgstr "Seu Nome"
+
+#: ../oc-includes/osclass/gui/contact.php:38 ../oc-includes/osclass/gui/contact.php:51 ../oc-includes/osclass/gui/item-sidebar.php:100 ../oc-includes/osclass/gui/user-public-sidebar.php:38 ../oc-content/themes/sigma/contact.php:39 ../oc-content/themes/sigma/contact.php:49 ../oc-content/themes/sigma/item-sidebar.php:105 ../oc-content/themes/sigma/user-public-sidebar.php:38
+msgid "optional"
+msgstr "Opcional"
+
+#: ../oc-includes/osclass/gui/contact.php:44 ../oc-includes/osclass/gui/item-sidebar.php:96 ../oc-includes/osclass/gui/user-public-sidebar.php:34 ../oc-content/themes/sigma/contact.php:44 ../oc-content/themes/sigma/item-send-friend.php:53 ../oc-content/themes/sigma/item-sidebar.php:101 ../oc-content/themes/sigma/item.php:291 ../oc-content/themes/sigma/user-public-sidebar.php:34
+msgid "Your email address"
+msgstr "O seu endereço de email"
+
+#: ../oc-includes/osclass/gui/contact.php:50 ../oc-content/themes/sigma/contact.php:49
+msgid "Subject"
+msgstr "Assunto"
+
+#: ../oc-includes/osclass/gui/contact.php:57 ../oc-includes/osclass/gui/item-send-friend.php:76 ../oc-includes/osclass/gui/item-sidebar.php:105 ../oc-includes/osclass/gui/user-public-sidebar.php:43 ../oc-content/themes/sigma/contact.php:54 ../oc-content/themes/sigma/item-send-friend.php:81 ../oc-content/themes/sigma/item-sidebar.php:110 ../oc-content/themes/sigma/user-public-sidebar.php:43
+msgid "Message"
+msgstr "Mensagem"
+
+#: ../oc-includes/osclass/gui/contact.php:65 ../oc-includes/osclass/gui/item-send-friend.php:85 ../oc-includes/osclass/gui/item-sidebar.php:120 ../oc-includes/osclass/gui/item.php:319 ../oc-includes/osclass/gui/user-public-sidebar.php:66 ../oc-content/themes/sigma/contact.php:70 ../oc-content/themes/sigma/item-send-friend.php:90 ../oc-content/themes/sigma/item-sidebar.php:125 ../oc-content/themes/sigma/item.php:341 ../oc-content/themes/sigma/user-public-sidebar.php:66
+msgid "Send"
+msgstr "Enviar"
+
+#: ../oc-includes/osclass/gui/footer.php:29 ../oc-includes/osclass/gui/functions.php:434 ../oc-includes/osclass/gui/header.php:44 ../oc-includes/osclass/gui/user-public-sidebar.php:23 ../oc-content/themes/sigma/footer.php:32 ../oc-content/themes/sigma/functions.php:467 ../oc-content/themes/sigma/header.php:45 ../oc-content/themes/sigma/user-public-sidebar.php:23
+msgid "Contact"
+msgstr "Contato"
+
+#: ../oc-includes/osclass/gui/footer.php:41 ../oc-content/themes/sigma/footer.php:53
+#, php-format
+msgid "Powered by <a title=\"Osclass classifieds script\" href=\"%s\">best classifieds scripts</a> osclass"
+msgstr "Desenvolvido pelos <a title=\"Osclass classifieds script\" href=\"%s\">melhores scripts de classificados</a> osclass"
+
+#: ../oc-includes/osclass/gui/functions.php:29 ../oc-content/themes/sigma/functions.php:33
+msgid "Latest Listings"
+msgstr "Últimos Anúncios"
+
+#: ../oc-includes/osclass/gui/functions.php:45 ../oc-content/themes/sigma/functions.php:51
+msgid "ie. PHP Programmer"
+msgstr "ie. PHP Programmer"
+
+#: ../oc-includes/osclass/gui/functions.php:415 ../oc-includes/osclass/gui/item-post.php:47 ../oc-content/themes/sigma/functions.php:448 ../oc-content/themes/sigma/item-post.php:51
+msgid "Publish a listing"
+msgstr "Publicar o Anúncio"
+
+#: ../oc-includes/osclass/gui/functions.php:416 ../oc-content/themes/sigma/functions.php:449
+msgid "Edit your listing"
+msgstr "Edite sua lista"
+
+#: ../oc-includes/osclass/gui/functions.php:417 ../oc-includes/osclass/gui/item-send-friend.php:29 ../oc-content/themes/sigma/functions.php:450 ../oc-content/themes/sigma/item-send-friend.php:29
+msgid "Send to a friend"
+msgstr "Enviar para amigos"
+
+#: ../oc-includes/osclass/gui/functions.php:418 ../oc-includes/osclass/gui/item-sidebar.php:35 ../oc-content/themes/sigma/functions.php:451 ../oc-content/themes/sigma/item-sidebar.php:37
+msgid "Contact publisher"
+msgstr "Fale com o anunciante"
+
+#: ../oc-includes/osclass/gui/functions.php:419 ../oc-content/themes/sigma/functions.php:452
+msgid "Search results"
+msgstr "Resultados da pesquisa"
+
+#: ../oc-includes/osclass/gui/functions.php:420 ../oc-content/themes/sigma/functions.php:453
+#, php-format
+msgid "Search results: %s"
+msgstr "Resultados da pesquisa:%s"
+
+#: ../oc-includes/osclass/gui/functions.php:421 ../oc-content/themes/sigma/functions.php:454
+msgid "Dashboard"
+msgstr "Painel"
+
+#: ../oc-includes/osclass/gui/functions.php:422 ../oc-content/themes/sigma/functions.php:455
+#, php-format
+msgid "%s's profile"
+msgstr "%s do perfil"
+
+#: ../oc-includes/osclass/gui/functions.php:423 ../oc-includes/osclass/gui/functions.php:474 ../oc-content/themes/sigma/functions.php:456 ../oc-content/themes/sigma/functions.php:507
+msgid "Account"
+msgstr "Conta"
+
+#: ../oc-includes/osclass/gui/functions.php:424 ../oc-includes/osclass/gui/functions.php:462 ../oc-includes/osclass/gui/search.php:135 ../oc-includes/osclass/gui/user-alerts.php:72 ../oc-content/themes/sigma/functions.php:457 ../oc-content/themes/sigma/functions.php:495 ../oc-content/themes/sigma/search.php:146 ../oc-content/themes/sigma/user-alerts.php:74
+msgid "Listings"
+msgstr "Anúncios"
+
+#: ../oc-includes/osclass/gui/functions.php:425 ../oc-includes/osclass/gui/functions.php:468 ../oc-includes/osclass/gui/user-alerts.php:29 ../oc-includes/osclass/gui/user-alerts.php:34 ../oc-content/themes/sigma/functions.php:458 ../oc-content/themes/sigma/functions.php:501 ../oc-content/themes/sigma/user-alerts.php:29 ../oc-content/themes/sigma/user-alerts.php:34
+msgid "Alerts"
+msgstr "Alertas"
+
+#: ../oc-includes/osclass/gui/functions.php:426 ../oc-includes/osclass/gui/user-profile.php:35 ../oc-includes/osclass/gui/user-profile.php:41 ../oc-content/themes/sigma/functions.php:459 ../oc-content/themes/sigma/user-profile.php:32 ../oc-content/themes/sigma/user-profile.php:38
+msgid "Update account"
+msgstr "Atualize conta"
+
+#: ../oc-includes/osclass/gui/functions.php:427 ../oc-includes/osclass/gui/functions.php:479 ../oc-includes/osclass/gui/user-change_email.php:30 ../oc-includes/osclass/gui/user-change_email.php:35 ../oc-content/themes/sigma/functions.php:460 ../oc-content/themes/sigma/functions.php:512 ../oc-content/themes/sigma/user-change_email.php:30 ../oc-content/themes/sigma/user-change_email.php:35
+msgid "Change email"
+msgstr "Alterar e-mail"
+
+#: ../oc-includes/osclass/gui/functions.php:428 ../oc-includes/osclass/gui/functions.php:484 ../oc-includes/osclass/gui/user-change_username.php:31 ../oc-includes/osclass/gui/user-change_username.php:36 ../oc-content/themes/sigma/functions.php:461 ../oc-content/themes/sigma/functions.php:517 ../oc-content/themes/sigma/user-change_username.php:31 ../oc-content/themes/sigma/user-change_username.php:36
+msgid "Change username"
+msgstr "Alterar nome de usuário"
+
+#: ../oc-includes/osclass/gui/functions.php:429 ../oc-includes/osclass/gui/functions.php:432 ../oc-includes/osclass/gui/functions.php:489 ../oc-includes/osclass/gui/user-change_password.php:29 ../oc-includes/osclass/gui/user-change_password.php:34 ../oc-includes/osclass/gui/user-forgot_password.php:49 ../oc-content/themes/sigma/functions.php:462 ../oc-content/themes/sigma/functions.php:465 ../oc-content/themes/sigma/functions.php:522 ../oc-content/themes/sigma/user-change_password.php:29 ../oc-content/themes/sigma/user-change_password.php:34 ../oc-content/themes/sigma/user-forgot_password.php:52
+msgid "Change password"
+msgstr "Alterar senha"
+
+#: ../oc-includes/osclass/gui/functions.php:430 ../oc-includes/osclass/gui/header.php:51 ../oc-includes/osclass/gui/item-sidebar.php:82 ../oc-content/themes/sigma/functions.php:463 ../oc-content/themes/sigma/header.php:58 ../oc-content/themes/sigma/item-sidebar.php:87
+msgid "Login"
+msgstr "Entrar"
+
+#: ../oc-includes/osclass/gui/functions.php:431 ../oc-content/themes/sigma/functions.php:464
+msgid "Recover password"
+msgstr "Recuperar senha"
+
+#: ../oc-includes/osclass/gui/functions.php:433 ../oc-content/themes/sigma/functions.php:466
+msgid "Create a new account"
+msgstr "Criar uma nova conta"
+
+#: ../oc-includes/osclass/gui/functions.php:457 ../oc-content/themes/sigma/functions.php:490
+msgid "Public Profile"
+msgstr "Perfil público"
+
+#: ../oc-includes/osclass/gui/functions.php:494 ../oc-includes/osclass/gui/user-sidebar.php:28 ../oc-content/themes/sigma/functions.php:527 ../oc-content/themes/sigma/user-sidebar.php:32
+msgid "Delete account"
+msgstr "Excluir conta"
+
+#: ../oc-includes/osclass/gui/functions.php:561 ../oc-content/themes/sigma/functions.php:594
+msgid "Settings have been updated"
+msgstr "As configurações foram atualizadas"
+
+#: ../oc-includes/osclass/gui/functions.php:576 ../oc-content/themes/sigma/functions.php:609
+msgid "The logo image has been uploaded"
+msgstr "A imagem do logotipo foi enviada"
+
+#: ../oc-includes/osclass/gui/functions.php:578 ../oc-content/themes/sigma/functions.php:611
+msgid "An error occurred. Please try again"
+msgstr "Ocorreu um erro. Tente novamente"
+
+#: ../oc-includes/osclass/gui/functions.php:589 ../oc-content/themes/sigma/functions.php:622
+msgid "The logo image has been removed"
+msgstr "A imagem do logotipo foi removido"
+
+#: ../oc-includes/osclass/gui/functions.php:591 ../oc-content/themes/sigma/functions.php:624
+msgid "Image not found"
+msgstr "Imagem não encontrada"
+
+#: ../oc-includes/osclass/gui/functions.php:615 ../oc-includes/osclass/gui/admin/header.php:27 ../oc-content/themes/sigma/functions.php:648 ../oc-content/themes/sigma/admin/header.php:27
+msgid "Header logo"
+msgstr "Logo do Cabeçalho"
+
+#: ../oc-includes/osclass/gui/functions.php:616 ../oc-includes/osclass/gui/admin/settings.php:24 ../oc-content/themes/sigma/functions.php:649 ../oc-content/themes/sigma/admin/settings.php:24
+msgid "Theme settings"
+msgstr "Configurações do Tema"
+
+#: ../oc-includes/osclass/gui/functions.php:676 ../oc-includes/osclass/gui/functions.php:698 ../oc-includes/osclass/gui/main.php:30 ../oc-content/themes/sigma/functions.php:709 ../oc-content/themes/sigma/functions.php:731 ../oc-content/themes/sigma/main.php:32
+msgid "All categories"
+msgstr "Todas as categorias"
+
+#: ../oc-includes/osclass/gui/head.php:22 ../oc-includes/osclass/gui/item.php:187 ../oc-includes/osclass/gui/item.php:234 ../oc-includes/osclass/gui/loop-single.php:70 ../oc-content/themes/sigma/head.php:22 ../oc-content/themes/sigma/item.php:206 ../oc-content/themes/sigma/item.php:253 ../oc-content/themes/sigma/loop-single.php:77
+msgid "Delete"
+msgstr "Apagar"
+
+#: ../oc-includes/osclass/gui/head.php:23 ../oc-content/themes/sigma/head.php:23
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../oc-includes/osclass/gui/head.php:72 ../oc-content/themes/sigma/head.php:69
+msgid "Previous image"
+msgstr "Imagem anterior"
+
+#: ../oc-includes/osclass/gui/head.php:73 ../oc-content/themes/sigma/head.php:70
+msgid "Next image"
+msgstr "Próxima imagem"
+
+#: ../oc-includes/osclass/gui/head.php:74 ../oc-content/themes/sigma/head.php:71
+msgid "Close"
+msgstr "Fechar"
+
+#: ../oc-includes/osclass/gui/header.php:42 ../oc-content/themes/sigma/header.php:43
+msgid "Home"
+msgstr "Início"
+
+#: ../oc-includes/osclass/gui/header.php:43 ../oc-includes/osclass/gui/header.php:60 ../oc-content/themes/sigma/header.php:44 ../oc-content/themes/sigma/header.php:67
+msgid "Publish Ad"
+msgstr "Publicar anúncio"
+
+#: ../oc-includes/osclass/gui/header.php:48 ../oc-content/themes/sigma/header.php:49 ../oc-content/themes/sigma/header.php:54
+msgid "My account"
+msgstr "Minha Conta"
+
+#: ../oc-includes/osclass/gui/header.php:49 ../oc-content/themes/sigma/header.php:71 ../oc-content/themes/sigma/header.php:72
+msgid "Logout"
+msgstr "Sair"
+
+#: ../oc-includes/osclass/gui/header.php:54 ../oc-content/themes/sigma/header.php:61
+msgid "Register"
+msgstr "Registro"
+
+#: ../oc-includes/osclass/gui/header.php:82 ../oc-content/themes/sigma/header.php:101
+msgid "What are you looking for today?"
+msgstr "O que você está procurando hoje?"
+
+#: ../oc-includes/osclass/gui/header.php:87 ../oc-content/themes/sigma/header.php:105 ../oc-content/themes/sigma/user-items.php:58 ../oc-content/themes/sigma/user-public-profile.php:108
+msgid "Keyword"
+msgstr "Palavra-chave"
+
+#: ../oc-includes/osclass/gui/header.php:92 ../oc-includes/osclass/gui/item-post.php:60 ../oc-content/themes/sigma/header.php:110 ../oc-content/themes/sigma/item-post.php:66 ../oc-content/themes/sigma/user-items.php:66 ../oc-content/themes/sigma/user-public-profile.php:116
+msgid "Category"
+msgstr "Categoria"
+
+#: ../oc-includes/osclass/gui/header.php:93 ../oc-includes/osclass/gui/item-post.php:62 ../oc-content/themes/sigma/header.php:111 ../oc-content/themes/sigma/item-post.php:68
+msgid "Select a category"
+msgstr "Selecione uma Categoria"
+
+#: ../oc-includes/osclass/gui/header.php:98 ../oc-content/themes/sigma/header.php:116
+msgid "Search"
+msgstr "Procurar"
+
+#: ../oc-includes/osclass/gui/item-post.php:58 ../oc-content/themes/sigma/item-post.php:64
+msgid "General Information"
+msgstr "Informação Geral"
+
+#: ../oc-includes/osclass/gui/item-post.php:66 ../oc-includes/osclass/gui/item.php:303 ../oc-content/themes/sigma/item-post.php:75 ../oc-content/themes/sigma/item.php:323
+msgid "Title"
+msgstr "Título"
+
+#: ../oc-includes/osclass/gui/item-post.php:72 ../oc-includes/osclass/gui/user-profile.php:136 ../oc-content/themes/sigma/item-post.php:82 ../oc-content/themes/sigma/user-profile.php:137 ../oc-content/themes/sigma/user-public-profile.php:90
+msgid "Description"
+msgstr "Descrição"
+
+#: ../oc-includes/osclass/gui/item-post.php:79 ../oc-includes/osclass/gui/search-sidebar.php:62 ../oc-content/themes/sigma/item-post.php:92 ../oc-content/themes/sigma/search-sidebar.php:74
+msgid "Price"
+msgstr "Preço"
+
+#: ../oc-includes/osclass/gui/item-post.php:93 ../oc-content/themes/sigma/item-post.php:111
+msgid "Listing Location"
+msgstr "Localização do anúncio"
+
+#: ../oc-includes/osclass/gui/item-post.php:96 ../oc-includes/osclass/gui/user-profile.php:94 ../oc-content/themes/sigma/item-post.php:114 ../oc-content/themes/sigma/user-profile.php:95
+msgid "Country"
+msgstr "País"
+
+#: ../oc-includes/osclass/gui/item-post.php:102 ../oc-includes/osclass/gui/item-post.php:128 ../oc-includes/osclass/gui/user-profile.php:100 ../oc-content/themes/sigma/item-post.php:120 ../oc-content/themes/sigma/item-post.php:147 ../oc-content/themes/sigma/user-profile.php:101
+msgid "Region"
+msgstr "Região"
+
+#: ../oc-includes/osclass/gui/item-post.php:150 ../oc-includes/osclass/gui/search-sidebar.php:44 ../oc-includes/osclass/gui/user-profile.php:106 ../oc-content/themes/sigma/item-post.php:170 ../oc-content/themes/sigma/search-sidebar.php:53 ../oc-content/themes/sigma/user-profile.php:107 ../oc-content/themes/sigma/user-public-profile.php:124
+msgid "City"
+msgstr "Cidade"
+
+#: ../oc-includes/osclass/gui/item-post.php:166 ../oc-content/themes/sigma/item-post.php:186
+msgid "City Area"
+msgstr "Área da Cidade"
+
+#: ../oc-includes/osclass/gui/item-post.php:172 ../oc-includes/osclass/gui/user-profile.php:124 ../oc-content/themes/sigma/item-post.php:192 ../oc-content/themes/sigma/user-profile.php:125
+msgid "Address"
+msgstr "Endereço"
+
+#: ../oc-includes/osclass/gui/item-post.php:181 ../oc-content/themes/sigma/item-post.php:203
+msgid "Seller's information"
+msgstr "Informações do Vendedor"
+
+#: ../oc-includes/osclass/gui/item-post.php:185 ../oc-includes/osclass/gui/item-sidebar.php:44 ../oc-includes/osclass/gui/item-sidebar.php:46 ../oc-includes/osclass/gui/user-profile.php:69 ../oc-includes/osclass/gui/user-register.php:36 ../oc-content/themes/sigma/item-post.php:207 ../oc-content/themes/sigma/item-sidebar.php:46 ../oc-content/themes/sigma/item-sidebar.php:48 ../oc-content/themes/sigma/user-profile.php:70 ../oc-content/themes/sigma/user-register.php:39
+msgid "Name"
+msgstr "Nome"
+
+#: ../oc-includes/osclass/gui/item-post.php:192 ../oc-includes/osclass/gui/item-sidebar.php:50 ../oc-includes/osclass/gui/user-change_email.php:73 ../oc-includes/osclass/gui/user-login.php:35 ../oc-includes/osclass/gui/user-recover.php:34 ../oc-includes/osclass/gui/user-register.php:42 ../oc-content/themes/sigma/item-post.php:214 ../oc-content/themes/sigma/item-sidebar.php:52 ../oc-content/themes/sigma/user-change_email.php:73 ../oc-content/themes/sigma/user-login.php:37 ../oc-content/themes/sigma/user-recover.php:34 ../oc-content/themes/sigma/user-register.php:45
+msgid "Email"
+msgstr "E-mail"
+
+#: ../oc-includes/osclass/gui/item-post.php:200 ../oc-content/themes/sigma/item-post.php:222
+msgid "Show email on the listing page"
+msgstr "Mostrar e-mail na página do anúncio"
+
+#: ../oc-includes/osclass/gui/item-post.php:206 ../oc-includes/osclass/gui/item-sidebar.php:54 ../oc-content/themes/sigma/item-sidebar.php:56
+msgid "Phone"
+msgstr "Telefone"
+
+#: ../oc-includes/osclass/gui/item-post.php:214 ../oc-content/themes/sigma/item-post.php:236
+msgid "Show phone on the listing page"
+msgstr "Mostrar telefone na página de listagem"
+
+#: ../oc-includes/osclass/gui/item-post.php:219 ../oc-content/themes/sigma/item-post.php:241
+msgid "Other contact"
+msgstr "Outros contatos"
+
+#: ../oc-includes/osclass/gui/item-post.php:234 ../oc-includes/osclass/gui/user-change_email.php:56 ../oc-includes/osclass/gui/user-change_password.php:61 ../oc-includes/osclass/gui/user-change_username.php:99 ../oc-includes/osclass/gui/user-profile.php:146 ../oc-content/themes/sigma/item-post.php:261 ../oc-content/themes/sigma/user-change_email.php:56 ../oc-content/themes/sigma/user-change_password.php:61 ../oc-content/themes/sigma/user-change_username.php:99 ../oc-content/themes/sigma/user-profile.php:149
+msgid "Update"
+msgstr "Atualizar"
+
+#: ../oc-includes/osclass/gui/item-post.php:234 ../oc-content/themes/sigma/item-post.php:261
+msgid "Publish"
+msgstr "Publicar"
+
+#: ../oc-includes/osclass/gui/item-send-friend.php:48 ../oc-includes/osclass/gui/item.php:271
+msgid "Your email"
+msgstr "Seu e-mail"
+
+#: ../oc-includes/osclass/gui/item-send-friend.php:55 ../oc-content/themes/sigma/item-send-friend.php:60
+msgid "Your friend's name"
+msgstr "Nome do seu amigo"
+
+#: ../oc-includes/osclass/gui/item-send-friend.php:61 ../oc-content/themes/sigma/item-send-friend.php:66
+msgid "Your friend's email address"
+msgstr "Endereço de e-mail do seu amigo"
+
+#: ../oc-includes/osclass/gui/item-send-friend.php:68 ../oc-content/themes/sigma/item-send-friend.php:73
+msgid "Subject (optional)"
+msgstr "Assunto (opcional)"
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:23 ../oc-content/themes/sigma/item-sidebar.php:25
+msgid "Report this listing"
+msgstr "Denunciar este anúncio"
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:44 ../oc-content/themes/sigma/item-sidebar.php:46
+msgid "online"
+msgstr "online"
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:58 ../oc-content/themes/sigma/item-sidebar.php:60
+msgid "Other"
+msgstr "Outros"
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:61 ../oc-includes/osclass/gui/item.php:121 ../oc-includes/osclass/gui/item.php:126 ../oc-content/themes/sigma/item-sidebar.php:66 ../oc-content/themes/sigma/item.php:130 ../oc-content/themes/sigma/item.php:135
+msgid "Contact seller"
+msgstr "Entre em contato com vendedor"
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:71 ../oc-content/themes/sigma/item-sidebar.php:76
+msgid "The listing is expired. You cannot contact the publisher."
+msgstr "O anúncio expirou. Você não pode contatar o anunciante."
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:75 ../oc-content/themes/sigma/item-sidebar.php:80
+msgid "It's your own listing, you cannot contact the publisher."
+msgstr "Este é o seu próprio anúncio, você não pode contatar o anunciante."
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:79 ../oc-content/themes/sigma/item-sidebar.php:84
+msgid "You must log in or register a new account in order to contact the advertiser"
+msgstr "Você deve efetuar o login ou registar uma nova conta, para entrar em contato com o anunciante"
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:100 ../oc-includes/osclass/gui/user-public-sidebar.php:38 ../oc-content/themes/sigma/item-post.php:228 ../oc-content/themes/sigma/item-sidebar.php:105 ../oc-content/themes/sigma/user-public-sidebar.php:38
+msgid "Phone number"
+msgstr "Número de Telefone"
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:111 ../oc-includes/osclass/gui/report.php:59 ../oc-content/themes/sigma/contact.php:60 ../oc-content/themes/sigma/item-sidebar.php:116 ../oc-content/themes/sigma/report.php:59
+msgid "Attachment"
+msgstr "Anexo"
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:131 ../oc-content/themes/sigma/item-sidebar.php:137
+msgid "Useful information"
+msgstr "Informações úteis"
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:133 ../oc-content/themes/sigma/item-sidebar.php:139
+msgid "Avoid scams by acting locally or paying with PayPal"
+msgstr "Evite fraudes, agindo localmente ou pagando com PayPal"
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:134 ../oc-content/themes/sigma/item-sidebar.php:140
+msgid "Never pay with Western Union, Moneygram or other anonymous payment services"
+msgstr "Nunca pague com Western Union, Moneygram ou outros serviços de pagamento anónimos"
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:135 ../oc-content/themes/sigma/item-sidebar.php:141
+msgid "Don't buy or sell outside of your country. Don't accept cashier cheques from outside your country"
+msgstr "Não compre ou venda fora do seu país. Não aceite cheques de fora do seu país"
+
+#: ../oc-includes/osclass/gui/item-sidebar.php:136 ../oc-content/themes/sigma/item-sidebar.php:142
+msgid "This site is never involved in any transaction, and does not handle payments, shipping, guarantee transactions, provide escrow services, or offer \"buyer protection\" or \"seller certification\""
+msgstr "Este site nunca está envolvida em qualquer transação,nem nos pagamentos, envios, garantias de transações, serviços de custódia, ou oferece \"proteção ao comprador \" ou \"vendedor de certificação \""
+
+#: ../oc-includes/osclass/gui/item.php:60 ../oc-content/themes/sigma/item.php:62
+#, php-format
+msgid "<strong class=\"publish\">Published date:</strong> %1$s"
+msgstr "<strong class=\"publish\">Data de publicação:</strong> %1$s"
+
+#: ../oc-includes/osclass/gui/item.php:61 ../oc-content/themes/sigma/item.php:63
+#, php-format
+msgid "<strong class=\"update\">Modified date:</strong> %1$s"
+msgstr "<strong class=\"update\">Data de modificação:</strong> %1$s"
+
+#: ../oc-includes/osclass/gui/item.php:64 ../oc-content/themes/sigma/item.php:66
+msgid "Location"
+msgstr "Localização"
+
+#: ../oc-includes/osclass/gui/item.php:71 ../oc-includes/osclass/gui/loop-single.php:56 ../oc-content/themes/sigma/item.php:73 ../oc-content/themes/sigma/loop-single.php:63
+msgid "Edit listing"
+msgstr "Editar anúncio"
+
+#: ../oc-includes/osclass/gui/item.php:84 ../oc-includes/osclass/gui/item.php:89 ../oc-content/themes/sigma/item.php:86 ../oc-content/themes/sigma/item.php:91
+msgid "Image"
+msgstr "Imagem"
+
+#: ../oc-includes/osclass/gui/item.php:127 ../oc-content/themes/sigma/item.php:138
+msgid "Share"
+msgstr "Compartilhar"
+
+#: ../oc-includes/osclass/gui/item.php:138 ../oc-content/themes/sigma/item.php:153
+msgid "Related listings"
+msgstr "Listagens relacionadas"
+
+#: ../oc-includes/osclass/gui/item.php:153 ../oc-content/themes/sigma/item.php:167
+msgid "Comments"
+msgstr "Comentário"
+
+#: ../oc-includes/osclass/gui/item.php:166 ../oc-includes/osclass/gui/item.php:213 ../oc-content/themes/sigma/item.php:185 ../oc-content/themes/sigma/item.php:232
+msgid "by"
+msgstr "por"
+
+#: ../oc-includes/osclass/gui/item.php:180 ../oc-includes/osclass/gui/item.php:227 ../oc-content/themes/sigma/item.php:199 ../oc-content/themes/sigma/item.php:246
+#, php-format
+msgid "%d of 5"
+msgstr "%d de 5"
+
+#: ../oc-includes/osclass/gui/item.php:180 ../oc-content/themes/sigma/item.php:199
+msgid "not rated"
+msgstr "sem classificação"
+
+#: ../oc-includes/osclass/gui/item.php:187 ../oc-includes/osclass/gui/item.php:234 ../oc-content/themes/sigma/item.php:206 ../oc-content/themes/sigma/item.php:253
+msgid "Delete your comment"
+msgstr "Apagar seu comentário"
+
+#: ../oc-includes/osclass/gui/item.php:198 ../oc-content/themes/sigma/item.php:217
+#, php-format
+msgid "You are replying to: %s"
+msgstr "Você está respondendo a: %s"
+
+#: ../oc-includes/osclass/gui/item.php:198 ../oc-content/themes/sigma/item.php:217
+msgid "Reply"
+msgstr "Responder"
+
+#: ../oc-includes/osclass/gui/item.php:250 ../oc-content/themes/sigma/item.php:270
+msgid "Leave your comment (spam and offensive messages will be removed)"
+msgstr "Deixe o seu comentário (mensagens de spam ou ofensivas serão removidas)"
+
+#: ../oc-includes/osclass/gui/item.php:280 ../oc-content/themes/sigma/item.php:300
+msgid "Rating"
+msgstr "Classificação"
+
+#: ../oc-includes/osclass/gui/item.php:296 ../oc-content/themes/sigma/item.php:316
+#, php-format
+msgid "Not available, you have already rated this item %d time(s)"
+msgstr "Não disponível, você já avaliou este item %d vez(es)"
+
+#: ../oc-includes/osclass/gui/item.php:309 ../oc-content/themes/sigma/item.php:329
+msgid "Click to post as standard comment and not reply"
+msgstr "Clique para postar como um comentário normal e não como uma resposta."
+
+#: ../oc-includes/osclass/gui/item.php:312 ../oc-content/themes/sigma/item.php:334
+msgid "Comment"
+msgstr "Comentar"
+
+#: ../oc-includes/osclass/gui/item.php:335 ../oc-content/themes/sigma/item.php:366
+msgid "of"
+msgstr "de"
+
+#: ../oc-includes/osclass/gui/loop-single.php:59 ../oc-content/themes/sigma/loop-single.php:66
+msgid "Renew"
+msgstr "Renovar"
+
+#: ../oc-includes/osclass/gui/loop-single.php:63 ../oc-content/themes/sigma/loop-single.php:70
+msgid "Activate"
+msgstr "Ativar"
+
+#: ../oc-includes/osclass/gui/loop-single.php:67 ../oc-content/themes/sigma/loop-single.php:74
+msgid "Deactivate"
+msgstr "Desativar"
+
+#: ../oc-includes/osclass/gui/loop-single.php:70 ../oc-includes/osclass/gui/user-alerts.php:53 ../oc-content/themes/sigma/loop-single.php:77 ../oc-content/themes/sigma/user-alerts.php:53
+msgid "This action cannot be undone. Are you sure you want to continue?"
+msgstr "Esta ação não pode ser desfeita. Tem certeza de que deseja continuar?"
+
+#: ../oc-includes/osclass/gui/main.php:54 ../oc-content/themes/sigma/main.php:56
+msgid "All locations"
+msgstr "Todos os locais"
+
+#: ../oc-includes/osclass/gui/report.php:23 ../oc-content/themes/sigma/report.php:23
+msgid "Reports are not available."
+msgstr "As denúncias não estão disponíveis."
+
+#: ../oc-includes/osclass/gui/report.php:37 ../oc-content/themes/sigma/report.php:37
+#, php-format
+msgid "Report #%d"
+msgstr "Denúncia #%d"
+
+#: ../oc-includes/osclass/gui/report.php:43 ../oc-content/themes/sigma/report.php:43
+msgid "Status"
+msgstr "Status"
+
+#: ../oc-includes/osclass/gui/report.php:48 ../oc-content/themes/sigma/report.php:48
+msgid "Reason"
+msgstr "Motivo"
+
+#: ../oc-includes/osclass/gui/report.php:53 ../oc-content/themes/sigma/report.php:53
+msgid "Report details"
+msgstr "Detalhes da denúncia"
+
+#: ../oc-includes/osclass/gui/report.php:60 ../oc-content/themes/sigma/report.php:60
+msgid "Download attachment"
+msgstr "Baixar anexo"
+
+#: ../oc-includes/osclass/gui/report.php:69 ../oc-content/themes/sigma/report.php:69
+msgid "Conversation history"
+msgstr "Histórico da conversa"
+
+#: ../oc-includes/osclass/gui/report.php:97 ../oc-content/themes/sigma/report.php:97
+msgid "Your reply"
+msgstr "Sua resposta"
+
+#: ../oc-includes/osclass/gui/report.php:105 ../oc-content/themes/sigma/report.php:105
+msgid "Send reply"
+msgstr "Enviar resposta"
+
+#: ../oc-includes/osclass/gui/report.php:111 ../oc-content/themes/sigma/report.php:111
+msgid "Manage this report in backoffice"
+msgstr "Gerenciar esta denúncia no backoffice"
+
+#: ../oc-includes/osclass/gui/report.php:113 ../oc-content/themes/sigma/report.php:113
+msgid "This report has been closed."
+msgstr "Esta denúncia foi encerrada."
+
+#: ../oc-includes/osclass/gui/report.php:115 ../oc-content/themes/sigma/report.php:115
+msgid "You can reply only when feedback was requested on this report."
+msgstr "Você só pode responder quando um retorno for solicitado nesta denúncia."
+
+#: ../oc-includes/osclass/gui/report.php:126 ../oc-includes/osclass/gui/user-public-profile.php:80 ../oc-content/themes/sigma/report.php:126 ../oc-content/themes/sigma/user-public-profile.php:82
+msgid "Report user"
+msgstr "Denunciar usuário"
+
+#: ../oc-includes/osclass/gui/report.php:126 ../oc-content/themes/sigma/report.php:126
+msgid "Report listing"
+msgstr "Denunciar anúncio"
+
+#: ../oc-includes/osclass/gui/report.php:130 ../oc-content/themes/sigma/report.php:130
+#, php-format
+msgid "You are reporting user %s."
+msgstr "Você está denunciando o usuário %s."
+
+#: ../oc-includes/osclass/gui/report.php:132 ../oc-content/themes/sigma/report.php:132
+#, php-format
+msgid "You are reporting listing %s."
+msgstr "Você está denunciando o anúncio %s."
+
+#: ../oc-includes/osclass/gui/search-sidebar.php:38 ../oc-content/themes/sigma/search-sidebar.php:47
+msgid "Your search"
+msgstr "Sua Pesquisa"
+
+#: ../oc-includes/osclass/gui/search-sidebar.php:52 ../oc-content/themes/sigma/search-sidebar.php:64
+msgid "Show only"
+msgstr "Mostrar apenas"
+
+#: ../oc-includes/osclass/gui/search-sidebar.php:55 ../oc-content/themes/sigma/search-sidebar.php:67
+msgid "listings with pictures"
+msgstr "listagens com fotos"
+
+#: ../oc-includes/osclass/gui/search-sidebar.php:65 ../oc-content/themes/sigma/search-sidebar.php:77
+msgid "Min"
+msgstr "Min"
+
+#: ../oc-includes/osclass/gui/search-sidebar.php:70 ../oc-content/themes/sigma/search-sidebar.php:82
+msgid "Max"
+msgstr "Max"
+
+#: ../oc-includes/osclass/gui/search-sidebar.php:91 ../oc-content/themes/sigma/search-sidebar.php:106 ../oc-content/themes/sigma/user-items.php:77 ../oc-content/themes/sigma/user-public-profile.php:134
+msgid "Apply"
+msgstr "Aplicar"
+
+#: ../oc-includes/osclass/gui/search-sidebar.php:99 ../oc-content/themes/sigma/search-sidebar.php:115
+msgid "Refine category"
+msgstr "Limitar a categoria"
+
+#: ../oc-includes/osclass/gui/search.php:55 ../oc-content/themes/sigma/search.php:60
+msgid "Selected"
+msgstr "Selecionado"
+
+#: ../oc-includes/osclass/gui/search.php:56 ../oc-content/themes/sigma/search.php:61
+msgid "Nothing selected, input was"
+msgstr "Nada selecionado, a entrada foi"
+
+#: ../oc-includes/osclass/gui/search.php:75 ../oc-content/themes/sigma/search.php:81
+#, php-format
+msgid "There are no results matching \"%s\""
+msgstr "Não existem resultados que correspondem à \"%s\""
+
+#: ../oc-includes/osclass/gui/search.php:79
+#, php-format
+msgid "%1$d - %2$d of %3$d listings"
+msgstr "%1$d - %2$d de %3$d listagens"
+
+#: ../oc-includes/osclass/gui/search.php:82 ../oc-content/themes/sigma/search.php:88
+msgid "Show filters"
+msgstr "Mostrar filtros"
+
+#: ../oc-includes/osclass/gui/search.php:86 ../oc-content/themes/sigma/search.php:92
+msgid "Sort by"
+msgstr "Classificar por"
+
+#: ../oc-includes/osclass/gui/search.php:127 ../oc-content/themes/sigma/search.php:138
+msgid "Premium listings"
+msgstr "Listagens premium"
+
+#: ../oc-includes/osclass/gui/search.php:148 ../oc-content/themes/sigma/search.php:160
+msgid "Other searches that may interest you"
+msgstr "Outras pesquisas que podem lhe interessar"
+
+#: ../oc-includes/osclass/gui/user-alerts.php:36 ../oc-content/themes/sigma/user-alerts.php:36
+msgid "You do not have any alerts yet"
+msgstr "Você não tem nenhum alerta ainda"
+
+#: ../oc-includes/osclass/gui/user-alerts.php:48 ../oc-content/themes/sigma/user-alerts.php:48
+#, php-format
+msgid "Alert #%d"
+msgstr "Alerta #%d"
+
+#: ../oc-includes/osclass/gui/user-alerts.php:53 ../oc-content/themes/sigma/user-alerts.php:53
+msgid "Delete this alert"
+msgstr "Apagar este Alerta"
+
+#: ../oc-includes/osclass/gui/user-alerts.php:54 ../oc-content/themes/sigma/user-alerts.php:54
+msgid "Open in search"
+msgstr "Abrir na pesquisa"
+
+#: ../oc-includes/osclass/gui/user-change_email.php:43 ../oc-content/themes/sigma/user-change_email.php:43
+msgid "Current email"
+msgstr "E-mail atual"
+
+#: ../oc-includes/osclass/gui/user-change_email.php:49 ../oc-content/themes/sigma/user-change_email.php:49
+msgid "New email"
+msgstr "Novo e-mail"
+
+#: ../oc-includes/osclass/gui/user-change_email.php:73 ../oc-includes/osclass/gui/user-change_username.php:47 ../oc-content/themes/sigma/user-change_email.php:73 ../oc-content/themes/sigma/user-change_username.php:47
+#, php-format
+msgid "%s is required"
+msgstr "%s é obrigatório"
+
+#: ../oc-includes/osclass/gui/user-change_password.php:42 ../oc-content/themes/sigma/user-change_password.php:42
+msgid "Current password"
+msgstr "Senha Atual"
+
+#: ../oc-includes/osclass/gui/user-change_password.php:48 ../oc-includes/osclass/gui/user-forgot_password.php:36 ../oc-content/themes/sigma/user-change_password.php:48 ../oc-content/themes/sigma/user-forgot_password.php:36
+msgid "New password"
+msgstr "Nova Senha"
+
+#: ../oc-includes/osclass/gui/user-change_password.php:54 ../oc-includes/osclass/gui/user-forgot_password.php:42 ../oc-content/themes/sigma/user-change_password.php:54 ../oc-content/themes/sigma/user-forgot_password.php:42
+msgid "Repeat new password"
+msgstr "Repetir a nova senha"
+
+#: ../oc-includes/osclass/gui/user-change_username.php:47 ../oc-includes/osclass/gui/user-change_username.php:91 ../oc-content/themes/sigma/user-change_username.php:47 ../oc-content/themes/sigma/user-change_username.php:91
+msgid "Username"
+msgstr "Usuário"
+
+#: ../oc-includes/osclass/gui/user-change_username.php:72 ../oc-content/themes/sigma/user-change_username.php:72
+msgid "The username is available"
+msgstr "O nome de usuário está disponível"
+
+#: ../oc-includes/osclass/gui/user-change_username.php:74 ../oc-content/themes/sigma/user-change_username.php:74
+msgid "The username is NOT available"
+msgstr "O nome de usuário não está disponível"
+
+#: ../oc-includes/osclass/gui/user-forgot_password.php:27 ../oc-includes/osclass/gui/user-recover.php:27 ../oc-content/themes/sigma/user-forgot_password.php:27 ../oc-content/themes/sigma/user-recover.php:27
+msgid "Recover your password"
+msgstr "Recupere sua senha"
+
+#: ../oc-includes/osclass/gui/user-items.php:40 ../oc-content/themes/sigma/user-items.php:41
+msgid "My listings"
+msgstr "Meus anúncios"
+
+#: ../oc-includes/osclass/gui/user-items.php:42
+msgid "No listings have been added yet"
+msgstr "Nenhum anúncio cadastrado. Anuncie agora mesmo."
+
+#: ../oc-includes/osclass/gui/user-login.php:27 ../oc-content/themes/sigma/user-login.php:27
+msgid "Access to your account"
+msgstr "Acesse sua conta"
+
+#: ../oc-includes/osclass/gui/user-login.php:41 ../oc-includes/osclass/gui/user-register.php:48 ../oc-content/themes/sigma/user-login.php:43 ../oc-content/themes/sigma/user-register.php:51
+msgid "Password"
+msgstr "Senha"
+
+#: ../oc-includes/osclass/gui/user-login.php:49 ../oc-content/themes/sigma/user-login.php:51
+msgid "Remember me"
+msgstr "Lembre-se"
+
+#: ../oc-includes/osclass/gui/user-login.php:59 ../oc-content/themes/sigma/user-login.php:61
+msgid "Log in"
+msgstr "Entrar"
+
+#: ../oc-includes/osclass/gui/user-login.php:64 ../oc-content/themes/sigma/user-login.php:66
+msgid "Register for a free account"
+msgstr "Registrar uma conta gratuita"
+
+#: ../oc-includes/osclass/gui/user-login.php:65 ../oc-content/themes/sigma/user-login.php:67
+msgid "Forgot password?"
+msgstr "Esqueceu a senha?"
+
+#: ../oc-includes/osclass/gui/user-profile.php:52 ../oc-content/themes/sigma/user-profile.php:53
+msgid "Picture"
+msgstr "Foto"
+
+#: ../oc-includes/osclass/gui/user-profile.php:75 ../oc-content/themes/sigma/user-profile.php:76
+msgid "User type"
+msgstr "Tipo de usuário"
+
+#: ../oc-includes/osclass/gui/user-profile.php:82 ../oc-content/themes/sigma/user-profile.php:83
+msgid "Mobile phone"
+msgstr "Telefone celular"
+
+#: ../oc-includes/osclass/gui/user-profile.php:88 ../oc-content/themes/sigma/user-profile.php:89
+msgid "Land phone"
+msgstr "Telefone fixo"
+
+#: ../oc-includes/osclass/gui/user-profile.php:112 ../oc-content/themes/sigma/user-profile.php:113
+msgid "City area"
+msgstr "Área da Cidade"
+
+#: ../oc-includes/osclass/gui/user-profile.php:118 ../oc-content/themes/sigma/user-profile.php:119
+msgid "ZIP"
+msgstr "ZIP"
+
+#: ../oc-includes/osclass/gui/user-profile.php:130 ../oc-content/themes/sigma/user-profile.php:131
+msgid "Website"
+msgstr "Website"
+
+#: ../oc-includes/osclass/gui/user-public-profile.php:74 ../oc-content/themes/sigma/user-public-profile.php:76
+#, php-format
+msgid "<strong>Address:</strong> %1$s"
+msgstr "<strong>Endereço:</strong> %1$s"
+
+#: ../oc-includes/osclass/gui/user-public-profile.php:77 ../oc-content/themes/sigma/user-public-profile.php:79
+#, php-format
+msgid "<strong>Location:</strong> %1$s"
+msgstr "<strong>Localização:</strong> %1$s"
+
+#: ../oc-includes/osclass/gui/user-public-profile.php:85
+msgid "User description"
+msgstr "Descrição do usuário"
+
+#: ../oc-includes/osclass/gui/user-public-profile.php:90
+msgid "Latest listings"
+msgstr "Últimos anuncios"
+
+#: ../oc-includes/osclass/gui/user-public-sidebar.php:60 ../oc-content/themes/sigma/user-public-sidebar.php:60
+msgid "Enter the words above"
+msgstr "Digite as palavras acima"
+
+#: ../oc-includes/osclass/gui/user-public-sidebar.php:62 ../oc-content/themes/sigma/user-public-sidebar.php:62
+msgid "Help"
+msgstr "Ajuda"
+
+#: ../oc-includes/osclass/gui/user-recover.php:42 ../oc-content/themes/sigma/user-recover.php:43
+msgid "Send me a new password"
+msgstr "Envie-me uma nova senha"
+
+#: ../oc-includes/osclass/gui/user-register.php:28 ../oc-content/themes/sigma/user-register.php:28
+msgid "Register an account for free"
+msgstr "Registre uma conta gratuitamente"
+
+#: ../oc-includes/osclass/gui/user-register.php:54 ../oc-content/themes/sigma/user-register.php:57
+msgid "Repeat password"
+msgstr "Repita a senha"
+
+#: ../oc-includes/osclass/gui/user-register.php:58 ../oc-content/themes/sigma/user-register.php:61
+msgid "The passwords do not match"
+msgstr "As senhas não coincidem"
+
+#: ../oc-includes/osclass/gui/user-register.php:69 ../oc-content/themes/sigma/user-register.php:72
+msgid "Create account"
+msgstr "Criar conta"
+
+#: ../oc-includes/osclass/gui/user-sidebar.php:20 ../oc-content/themes/sigma/user-sidebar.php:24
+msgid "Display menu"
+msgstr "Menu de exibição"
+
+#: ../oc-includes/osclass/gui/user-sidebar.php:28 ../oc-content/themes/sigma/user-sidebar.php:32
+msgid "Are you sure you want to delete your account?"
+msgstr "Tem certeza de que deseja excluir a sua conta?"
+
+#: ../oc-includes/osclass/gui/admin/header.php:33 ../oc-content/themes/sigma/admin/header.php:33
+msgid "Preview"
+msgstr "Visualização"
+
+#: ../oc-includes/osclass/gui/admin/header.php:40 ../oc-content/themes/sigma/admin/header.php:40
+msgid "Remove logo"
+msgstr "Remover Logo"
+
+#: ../oc-includes/osclass/gui/admin/header.php:47 ../oc-content/themes/sigma/admin/header.php:47
+msgid "No logo has been uploaded yet"
+msgstr "Nenhum logotipo foi carregado ainda"
+
+#: ../oc-includes/osclass/gui/admin/header.php:50 ../oc-content/themes/sigma/admin/header.php:50
+msgid "Upload logo"
+msgstr "Enviar Logo"
+
+#: ../oc-includes/osclass/gui/admin/header.php:51 ../oc-content/themes/sigma/admin/header.php:51
+msgid "The preferred size of the logo is 600x100."
+msgstr "O tamanho preferido de é logotipo o 600x100."
+
+#: ../oc-includes/osclass/gui/admin/header.php:53 ../oc-content/themes/sigma/admin/header.php:53
+msgid "<strong>Note:</strong> Uploading another logo will overwrite the current logo."
+msgstr "<strong> Nota: </strong> Carregar outro logo irá substituir o actual logótipo."
+
+#: ../oc-includes/osclass/gui/admin/header.php:61 ../oc-content/themes/sigma/admin/header.php:61
+msgid "Logo image (png,gif,jpg)"
+msgstr "Logo de imagem (png, gif, jpg)"
+
+#: ../oc-includes/osclass/gui/admin/header.php:67 ../oc-content/themes/sigma/admin/header.php:67
+msgid "Upload"
+msgstr "Enviar"
+
+#: ../oc-includes/osclass/gui/admin/header.php:76 ../oc-content/themes/sigma/admin/header.php:76
+#, php-format
+msgid "The images folder <strong>%s</strong> is not writable on your server"
+msgstr "A pasta imagens <strong> %s </strong> não é gravável em seu servidor"
+
+#: ../oc-includes/osclass/gui/admin/header.php:77 ../oc-content/themes/sigma/admin/header.php:77
+msgid "Osclass cannot upload the logo image from the administration panel."
+msgstr "O Osclass não consegue enviar a imagem do logotipo pelo painel de administração."
+
+#: ../oc-includes/osclass/gui/admin/header.php:78 ../oc-content/themes/sigma/admin/header.php:78
+msgid "Please make the aforementioned image folder writable."
+msgstr "Por favor, modifique a permissão de gravação da pasta de imagem."
+
+#: ../oc-includes/osclass/gui/admin/header.php:83 ../oc-content/themes/sigma/admin/header.php:83
+msgid "To make a directory writable under UNIX execute this command from the shell:"
+msgstr "Para criar um diretório gravável em UNIX executar este comando a partir do shell:"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:30 ../oc-content/themes/sigma/admin/settings.php:30
+msgid "Search placeholder"
+msgstr "Espaço reservado pesquisa"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:34 ../oc-content/themes/sigma/admin/settings.php:34
+msgid "Show lists as:"
+msgstr "Mostrar listas como:"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:37 ../oc-content/themes/sigma/admin/settings.php:37
+msgid "Gallery"
+msgstr "Galeria"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:38 ../oc-content/themes/sigma/admin/settings.php:38
+msgid "List"
+msgstr "Lista"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:43 ../oc-content/themes/sigma/admin/settings.php:43
+msgid "Footer link"
+msgstr "Link de Rodapé"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:45 ../oc-content/themes/sigma/admin/settings.php:45
+msgid "I want to help Osclass by linking to <a href=\"https://osclass-classifieds.com/\" target=\"_blank\">osclass</a> from my site with the following text:"
+msgstr "Quero ajudar a Osclass colocando um link para <a href=\"https://osclass-classifieds.com/\" target=\"_blank\">o site deles</a> no meu site com o seguinte texto:"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:46 ../oc-content/themes/sigma/admin/settings.php:46
+msgid "This website is proudly using the <a title=\"Osclass web\" href=\"https://osclass-classifieds.com/\">classifieds scripts</a> software <strong>Osclass</strong>"
+msgstr "Este site usa com orgulho o software <a title=\"Osclass web\" href=\"https://osclass-classifieds.com/\">de classificados</a> <strong>Osclass.</strong>"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:54 ../oc-content/themes/sigma/admin/settings.php:54
+msgid "Right-To-Left (RTL)"
+msgstr "Da direita para a esquerda (RTL)"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:58 ../oc-content/themes/sigma/admin/settings.php:58
+msgid "Enable Right-To-Left"
+msgstr "Ativar da direita para a esquerda"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:61 ../oc-content/themes/sigma/admin/settings.php:61
+msgid "enable/disable"
+msgstr "ativar/desativar"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:69 ../oc-content/themes/sigma/admin/settings.php:69
+msgid "Location input"
+msgstr "Informação de localização"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:73 ../oc-content/themes/sigma/admin/settings.php:73
+msgid "Show location input as:"
+msgstr "Mostrar a entrada de localização como:"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:76 ../oc-content/themes/sigma/admin/settings.php:76
+msgid "Dropdown"
+msgstr "Menu suspenso"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:77 ../oc-content/themes/sigma/admin/settings.php:77
+msgid "Autocomplete"
+msgstr "Preenchimento automático"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:84 ../oc-content/themes/sigma/admin/settings.php:84
+msgid "Ads management"
+msgstr "Gerenciamento de anúncios"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:88 ../oc-content/themes/sigma/admin/settings.php:88
+msgid "In this section you can configure your site to display ads and start generating revenue."
+msgstr "Nesta seção, você pode configurar seu site para exibir anúncios e começar a gerar receita."
+
+#: ../oc-includes/osclass/gui/admin/settings.php:88 ../oc-content/themes/sigma/admin/settings.php:88
+msgid "If you are using an online advertising platform, such as Google Adsense, copy and paste here the provided code for ads."
+msgstr "Se você estiver usando uma plataforma de publicidade online, como o Google Adsense, copie e cole aqui o código fornecido para os anúncios."
+
+#: ../oc-includes/osclass/gui/admin/settings.php:94 ../oc-content/themes/sigma/admin/settings.php:94
+msgid "Header 728x90"
+msgstr "Cabeçalho 728x90"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:98 ../oc-content/themes/sigma/admin/settings.php:98
+msgid "This ad will be shown at the top of your website, next to the site title and above the search results. Note that the size of the ad has to be 728x90 pixels."
+msgstr "Esse anúncio vai aparecer no topo do seu site, ao lado do título do site e acima dos resultados da pesquisa. Lembre-se de que o tamanho do anúncio precisa ser 728x90 pixels."
+
+#: ../oc-includes/osclass/gui/admin/settings.php:102 ../oc-content/themes/sigma/admin/settings.php:102
+msgid "Homepage 728x90"
+msgstr "Página inicial 728x90"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:106 ../oc-content/themes/sigma/admin/settings.php:106
+msgid "This ad will be shown on the main site of your website. It will appear both at the top and bottom of your site homepage. Note that the size of the ad has to be 728x90 pixels."
+msgstr "Esse anúncio vai aparecer na página principal do seu site. Ele vai aparecer tanto na parte de cima quanto na parte de baixo da página inicial do seu site. Lembre-se de que o tamanho do anúncio precisa ser 728x90 pixels."
+
+#: ../oc-includes/osclass/gui/admin/settings.php:110 ../oc-content/themes/sigma/admin/settings.php:110
+msgid "Search results 728x90 (top of the page)"
+msgstr "Resultados da pesquisa 728x90 (parte superior da página)"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:114 ../oc-content/themes/sigma/admin/settings.php:114
+msgid "This ad will be shown on top of the search results of your site. Note that the size of the ad has to be 728x90 pixels."
+msgstr "Esse anúncio vai aparecer no topo dos resultados de pesquisa do seu site. Lembre-se de que o tamanho do anúncio precisa ser 728x90 pixels."
+
+#: ../oc-includes/osclass/gui/admin/settings.php:118 ../oc-content/themes/sigma/admin/settings.php:118
+msgid "Search results 728x90 (middle of the page)"
+msgstr "Resultados da pesquisa 728x90 (no meio da página)"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:122 ../oc-content/themes/sigma/admin/settings.php:122
+msgid "This ad will be shown among the search results of your site. Note that the size of the ad has to be 728x90 pixels."
+msgstr "Esse anúncio vai aparecer nos resultados de pesquisa do seu site. Lembre-se de que o tamanho do anúncio precisa ser 728x90 pixels."
+
+#: ../oc-includes/osclass/gui/admin/settings.php:126 ../oc-content/themes/sigma/admin/settings.php:126
+msgid "Sidebar 300x250"
+msgstr "Barra lateral 300x250"
+
+#: ../oc-includes/osclass/gui/admin/settings.php:130 ../oc-content/themes/sigma/admin/settings.php:130
+msgid "This ad will be shown at the right sidebar of your website, on the product detail page. Note that the size of the ad has to be 300x350 pixels."
+msgstr "Esse anúncio vai aparecer na barra lateral direita do seu site, na página de detalhes do produto. Lembre-se de que o tamanho do anúncio precisa ser 300x350 pixels."
+
+#: ../oc-includes/osclass/gui/admin/settings.php:134 ../oc-content/themes/sigma/admin/settings.php:134
+msgid "Save changes"
+msgstr "Salve as alterações"
+
+#: ../oc-content/themes/sigma/alert-form.php:69
+msgid "Manage"
+msgstr "Gerenciar"
+
+#: ../oc-content/themes/sigma/item-send-friend.php:34
+msgid "Send to friend form is disabled."
+msgstr "O formulário \"Enviar a um amigo\" está desativado."
+
+#: ../oc-content/themes/sigma/item.php:144
+#, php-format
+msgid "%d page views"
+msgstr "%d visualizações de página"
+
+#: ../oc-content/themes/sigma/item.php:173
+msgid "No comments have been published yet"
+msgstr "Nenhum comentário foi publicado ainda"
+
+#: ../oc-content/themes/sigma/item.php:350
+msgid "You must be logged in to comment"
+msgstr "Você precisa estar conectado para comentar."
+
+#: ../oc-content/themes/sigma/search.php:85
+#, php-format
+msgid "%d - %d of %d listings"
+msgstr "%d - %d de listagens %d "
+
+#: ../oc-content/themes/sigma/subdomain-navigation.php:41
+msgid "Join our community to buy and sell from each other everyday around the world."
+msgstr "Junte-se à nossa comunidade para comprar e vender uns aos outros todos os dias em todo o mundo."
+
+#: ../oc-content/themes/sigma/subdomain-navigation.php:42
+msgid "Please select preferred site:"
+msgstr "Selecione o local de sua preferência:"
+
+#: ../oc-content/themes/sigma/subdomain-navigation.php:47
+msgid "Copyright"
+msgstr "Direitos autorais"
+
+#: ../oc-content/themes/sigma/user-items.php:50
+msgid "Item type"
+msgstr "Tipo de item"
+
+#: ../oc-content/themes/sigma/user-items.php:82 ../oc-content/themes/sigma/user-public-profile.php:141
+msgid "No listings found"
+msgstr "Não foram encontradas listagens"
+
+#: ../oc-content/themes/sigma/user-public-profile.php:98
+msgid "User listings"
+msgstr "Lista de usuários"

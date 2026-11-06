@@ -1,0 +1,5 @@
+#side_cena {background: url('images/cena_main.png') repeat-x; }
+#menu_h3 {background: url('images/cena_main.png') repeat-x; }
+#side_currency {background: url('images/cena_curr.png') repeat-x; padding: padding:10px 20px;margin:-10px 0;border-left:1px solid #fff}
+.search #kontakt fieldset .button, div.button {padding-top:4px;padding-bottom:5px;border-bottom:1px solid #1e69de}
+.search #kontakt fieldset .button:hover, div.button:hover {border-bottom:1px solid #bed154 }
