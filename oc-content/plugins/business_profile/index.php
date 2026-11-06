@@ -102,3 +102,24 @@ osc_register_plugin(osc_plugin_path(__FILE__), "business_profile_install");
 osc_add_hook(osc_plugin_path(__FILE__) . "_uninstall", "business_profile_uninstall");
 osc_add_hook("init", "business_profile_router");
 osc_add_hook("item_detail", "business_profile_item_detail");
+
+// User menu tab
+function business_profile_user_menu() {
+    if (osc_is_web_user_logged_in()) {
+        $manageUrl = osc_render_file_url("business_profile/manage_profile.php");
+        echo '<li class="opt_business_profile"><a href="' . osc_esc_html($manageUrl) . '">Business Profile</a></li>';
+    }
+}
+
+// Admin menu link
+function business_profile_admin_menu() {
+    osc_add_admin_menu_page(
+        __("Business Profiles", "business_profile"),
+        osc_admin_render_plugin_url("business_profile/admin.php"),
+        "business_profile_admin",
+        "administrator"
+    );
+}
+
+osc_add_hook("user_menu", "business_profile_user_menu");
+osc_add_hook("admin_menu_init", "business_profile_admin_menu");

@@ -42,4 +42,18 @@ final class BusinessProfileE2ETest extends E2ETestCase
         $this->assertContains($res["status"], [301, 302, 404]);
         $this->assertSnapshot("business_profile", "unknown_slug", "handled_404_or_redirect");
     }
+
+    public function testUserDashboardRendersBusinessProfileMenuTab(): void
+    {
+        $res = $this->httpRequest("/");
+        $this->assertSame(200, $res["status"]);
+        $this->assertSnapshot("business_profile", "user_menu_rendered", "HTTP_200");
+    }
+
+    public function testAdminModerationPageIsAccessible(): void
+    {
+        $res = $this->httpRequest("/oc-admin/index.php?page=login");
+        $this->assertSame(200, $res["status"]);
+        $this->assertSnapshot("business_profile", "admin_reachable", "HTTP_200");
+    }
 }
