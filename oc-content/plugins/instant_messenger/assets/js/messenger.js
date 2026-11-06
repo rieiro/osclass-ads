@@ -160,6 +160,27 @@
             this.isSending = true;
             if (sendBtn) sendBtn.disabled = true;
             if (textarea) textarea.value = "";
+
+            // Optimistic UI: append bubble immediately
+            var tempMsgId = "temp_" + Date.now();
+            var nowTime = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false });
+            var box = document.getElementById("imMessagesBox");
+            if (box && text) {
+                var pendingRow = document.createElement("div");
+                pendingRow.id = "imMsg_" + tempMsgId;
+                pendingRow.setAttribute("data-msg-id", tempMsgId);
+                pendingRow.className = "im-msg-row me im-msg-pending";
+                pendingRow.innerHTML = '<div class="im-msg-bubble">' + 
+                    '<div>' + text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "<br>") + '</div>' + 
+                '</div>' + 
+                '<div class="im-msg-meta">' + 
+                    '<span>' + nowTime + '</span>' + 
+                    '<span class="im-seen-check"><i class="fa fa-clock" style="opacity:0.6;"></i></span>' + 
+                '</div>';
+                box.appendChild(pendingRow);
+                self.scrollToBottom();
+            }
+
             this.startPolling();
 
             var formData = new FormData();
@@ -181,8 +202,25 @@
                 if (data.status === "ok") {
                     if (fileInput) fileInput.value = "";
                     if (attachBadge) attachBadge.style.display = "none";
+                    if (data.msg_id) {
+                        if (data.msg_id > self.lastMessageId) {
+                            self.lastMessageId = data.msg_id;
+                        }
+                        var pRow = document.getElementById("imMsg_" + tempMsgId);
+                        if (pRow) {
+                            pRow.id = "imMsg_" + data.msg_id;
+                            pRow.setAttribute("data-msg-id", data.msg_id);
+                            pRow.classList.remove("im-msg-pending");
+                            var checkSpan = pRow.querySelector(".im-seen-check");
+                            if (checkSpan) {
+                                checkSpan.innerHTML = '<i class="fa fa-check"></i>';
+                            }
+                        }
+                    }
                     self.fetchNewMessages();
                 } else {
+                    var pRow = document.getElementById("imMsg_" + tempMsgId);
+                    if (pRow) pRow.remove();
                     if (textarea && text) textarea.value = text;
                     alert(data.error || "Failed to send message.");
                 }
@@ -190,6 +228,8 @@
             .catch(function(err) {
                 self.isSending = false;
                 if (sendBtn) sendBtn.disabled = false;
+                var pRow = document.getElementById("imMsg_" + tempMsgId);
+                if (pRow) pRow.remove();
                 if (textarea && text) textarea.value = text;
                 alert("Network error while sending message.");
             });

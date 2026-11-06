@@ -149,7 +149,13 @@ if ($action === 'im_send_message') {
     $msg_id = $im->sendMessage($thread_id, $sender_id, $sender_name, $sender_email, $message, $file);
 
     if ($msg_id) {
-        // Send email alert if enabled
+        // Non-blocking response: return success to browser immediately before processing email
+        echo json_encode(array('status' => 'ok', 'msg_id' => $msg_id, 'time' => date('H:i')));
+        if (function_exists('fastcgi_finish_request')) {
+            fastcgi_finish_request();
+        }
+
+        // Send email alert in background if enabled
         if (osc_get_preference('im_email_notifications', 'instant_messenger') && !empty($recipient_email)) {
             $item_title = $thread['title'];
             $subject = sprintf(__('[%s] New message from %s regarding "%s"', 'instant_messenger'), osc_page_title(), $sender_name, $item_title);
@@ -187,8 +193,6 @@ if ($action === 'im_send_message') {
             );
             @osc_sendMail($params);
         }
-
-        echo json_encode(array('status' => 'ok', 'msg_id' => $msg_id));
     } else {
         echo json_encode(array('status' => 'error', 'error' => 'Failed to save message.'));
     }
