@@ -26,4 +26,12 @@ final class ManageProfileTest extends DatabaseTestCase
         $this->assertFileExists($path);
         $this->assertStringContainsString("bp-manage-form", (string) file_get_contents($path));
     }
+
+    public function testManageProfileDoesNotDuplicateThemeHeaderAndFooter(): void
+    {
+        $path = ABS_PATH . "src/Plugins/business_profile/manage_profile.php";
+        $source = (string) file_get_contents($path);
+        $this->assertStringNotContainsString("osc_current_web_theme_path('header.php')", $source);
+        $this->assertStringNotContainsString("osc_current_web_theme_path('footer.php')", $source);
+    }
 }

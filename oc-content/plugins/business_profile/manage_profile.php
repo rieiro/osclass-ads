@@ -96,7 +96,7 @@ $savedHours = !empty($profile['s_opening_hours']) ? json_decode((string)$profile
 $savedSocials = !empty($profile['s_social_links']) ? json_decode((string)$profile['s_social_links'], true) : [];
 $savedAttrs = !empty($profile['s_attributes']) ? json_decode((string)$profile['s_attributes'], true) : [];
 
-osc_current_web_theme_path('header.php');
+
 ?>
 
 <div class="bp-manage-form" style="max-width: 900px; margin: 30px auto; padding: 25px; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); font-family: system-ui, -apple-system, sans-serif;">
@@ -237,4 +237,4 @@ osc_current_web_theme_path('header.php');
     </form>
 </div>
 
-<?php osc_current_web_theme_path('footer.php'); ?>
+
