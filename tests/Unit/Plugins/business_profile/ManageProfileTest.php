@@ -56,4 +56,15 @@ final class ManageProfileTest extends DatabaseTestCase
         $this->assertStringContainsString("float: none !important", $source);
         $this->assertStringContainsString("bp-grid-2", $source);
     }
+
+    public function testOpeningHoursSeparatorAndInputsDoNotWrap(): void
+    {
+        $path = ABS_PATH . "src/Plugins/business_profile/manage_profile.php";
+        $source = (string) file_get_contents($path);
+
+        $this->assertStringContainsString("bp-hours-inputs", $source);
+        $this->assertStringContainsString("bp-hours-sep", $source);
+        $this->assertStringContainsString("flex-wrap: nowrap !important", $source);
+        $this->assertStringContainsString(".bp-hours-inputs input[type=\"time\"]", $source);
+    }
 }

@@ -111,6 +111,19 @@ $savedAttrs = !empty($profile['s_attributes']) ? json_decode((string)$profile['s
         .bp-grid-2 { display: flex !important; gap: 16px !important; clear: both !important; width: 100% !important; margin-bottom: 16px !important; }
         .bp-grid-2 > div { flex: 1 1 50% !important; min-width: 0 !important; box-sizing: border-box !important; }
         .bp-field { margin-bottom: 16px !important; clear: both !important; width: 100% !important; }
+        .bp-hours-row { display: flex !important; align-items: center !important; justify-content: space-between !important; padding: 8px 0 !important; border-bottom: 1px solid #edf2f7 !important; clear: both !important; }
+        .bp-hours-day { width: 120px !important; font-weight: 600 !important; font-size: 13px !important; color: #334155 !important; flex-shrink: 0 !important; }
+        .bp-hours-inputs { display: flex !important; align-items: center !important; gap: 8px !important; flex-wrap: nowrap !important; }
+        .bp-hours-inputs input[type="time"] { float: none !important; display: inline-block !important; width: 110px !important; height: 36px !important; margin: 0 !important; padding: 4px 8px !important; border: 1px solid #cbd5e1 !important; border-radius: 4px !important; font-size: 13px !important; line-height: normal !important; background: #ffffff !important; box-sizing: border-box !important; }
+        .bp-hours-sep { display: inline-block !important; font-size: 13px !important; color: #64748b !important; line-height: 36px !important; margin: 0 4px !important; white-space: nowrap !important; flex-shrink: 0 !important; }
+        .bp-hours-inputs label.bp-closed-label { float: none !important; display: inline-flex !important; align-items: center !important; width: auto !important; clear: none !important; margin: 0 0 0 10px !important; font-size: 12px !important; font-weight: 500 !important; color: #64748b !important; cursor: pointer !important; white-space: nowrap !important; flex-shrink: 0 !important; }
+        .bp-hours-inputs label.bp-closed-label input[type="checkbox"] { float: none !important; margin: 0 4px 0 0 !important; display: inline-block !important; vertical-align: middle !important; }
+        .bp-amenities-group { display: flex !important; flex-wrap: wrap !important; gap: 20px !important; margin-bottom: 24px !important; background: #f8fafc !important; padding: 16px !important; border-radius: 8px !important; border: 1px solid #e2e8f0 !important; }
+        .bp-amenities-group label { display: inline-flex !important; width: auto !important; clear: none !important; margin: 0 !important; cursor: pointer !important; align-items: center !important; gap: 6px !important; font-size: 13px !important; font-weight: 600 !important; color: #334155 !important; }
+        .bp-amenities-group input[type="checkbox"] { float: none !important; margin: 0 !important; }
+        .bp-status-toggle { margin-bottom: 24px !important; padding-top: 15px !important; border-top: 1px solid #e2e8f0 !important; }
+        .bp-status-toggle label { display: inline-flex !important; width: auto !important; clear: none !important; margin: 0 !important; align-items: center !important; gap: 8px !important; font-size: 14px !important; font-weight: 700 !important; color: #0f172a !important; }
+        .bp-status-toggle input[type="checkbox"] { float: none !important; margin: 0 !important; }
     </style>
     <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #f1f5f9; padding-bottom: 16px; margin-bottom: 24px;">
         <div>
@@ -204,13 +217,13 @@ $savedAttrs = !empty($profile['s_attributes']) ? json_decode((string)$profile['s
                 $openT = $sch['open'] ?? '09:00';
                 $closeT = $sch['close'] ?? '18:00';
             ?>
-                <div style="display: flex; align-items: center; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #edf2f7;">
-                    <div style="width: 120px; font-weight: 600; font-size: 13px; color: #334155;"><?php echo $dLabel; ?></div>
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <input type="time" name="hours_<?php echo $dKey; ?>_open" value="<?php echo osc_esc_html($openT); ?>" style="padding: 4px 8px; border: 1px solid #cbd5e1; border-radius: 4px;" />
-                        <span>to</span>
-                        <input type="time" name="hours_<?php echo $dKey; ?>_close" value="<?php echo osc_esc_html($closeT); ?>" style="padding: 4px 8px; border: 1px solid #cbd5e1; border-radius: 4px;" />
-                        <label style="font-size: 12px; color: #64748b; margin-left: 10px; display: inline-flex; align-items: center; gap: 4px;">
+                <div class="bp-hours-row">
+                    <div class="bp-hours-day"><?php echo $dLabel; ?></div>
+                    <div class="bp-hours-inputs">
+                        <input type="time" name="hours_<?php echo $dKey; ?>_open" value="<?php echo osc_esc_html($openT); ?>" />
+                        <span class="bp-hours-sep">to</span>
+                        <input type="time" name="hours_<?php echo $dKey; ?>_close" value="<?php echo osc_esc_html($closeT); ?>" />
+                        <label class="bp-closed-label">
                             <input type="checkbox" name="hours_<?php echo $dKey; ?>_closed" value="1" <?php echo ($closed ? 'checked' : ''); ?> /> Closed
                         </label>
                     </div>
@@ -220,26 +233,26 @@ $savedAttrs = !empty($profile['s_attributes']) ? json_decode((string)$profile['s
 
         <!-- 4. Features & Amenities -->
         <h2 style="font-size: 17px; font-weight: 700; color: #1e293b; margin: 0 0 16px 0; border-left: 4px solid #4f46e5; padding-left: 10px;">Features & Amenities</h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 24px; background: #f8fafc; padding: 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
-            <label style="font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">
+        <div class="bp-amenities-group">
+            <label>
                 <input type="checkbox" name="attr_wifi" value="1" <?php echo (!empty($savedAttrs['wifi']) ? 'checked' : ''); ?> /> Free Wi-Fi
             </label>
-            <label style="font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">
+            <label>
                 <input type="checkbox" name="attr_parking" value="1" <?php echo (!empty($savedAttrs['parking']) ? 'checked' : ''); ?> /> Customer Parking
             </label>
-            <label style="font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">
+            <label>
                 <input type="checkbox" name="attr_delivery" value="1" <?php echo (!empty($savedAttrs['delivery']) ? 'checked' : ''); ?> /> Delivery Service
             </label>
-            <label style="font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">
+            <label>
                 <input type="checkbox" name="attr_card" value="1" <?php echo (!empty($savedAttrs['card']) ? 'checked' : ''); ?> /> Accepts Credit Cards
             </label>
-            <label style="font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">
+            <label>
                 <input type="checkbox" name="attr_pix" value="1" <?php echo (!empty($savedAttrs['pix']) ? 'checked' : ''); ?> /> Accepts PIX
             </label>
         </div>
 
-        <div style="margin-bottom: 24px; padding-top: 15px; border-top: 1px solid #e2e8f0;">
-            <label style="font-size: 14px; font-weight: 700; color: #0f172a; display: inline-flex; align-items: center; gap: 8px;">
+        <div class="bp-status-toggle">
+            <label>
                 <input type="checkbox" name="b_enabled" value="1" <?php echo ((int)($profile['b_enabled'] ?? 1) === 1 ? 'checked' : ''); ?> />
                 Business Profile Active (visible to visitors)
             </label>
