@@ -14,4 +14,13 @@ final class AdminQueriesTest extends DatabaseTestCase
         $this->assertStringNotContainsString("TRUNCATE TABLE", $source);
         $this->assertStringContainsString("DELETE FROM %st_latest_searches", $source);
     }
+
+    public function testCsvExportUsesResultArrayAndDoesNotInfiniteLoopOnRowMethod(): void
+    {
+        $path = ABS_PATH . "src/Plugins/olx_smart_search/admin_queries.php";
+        $source = (string) file_get_contents($path);
+
+        $this->assertStringNotContainsString('while ($row = $res->row())', $source);
+        $this->assertStringContainsString('$res->result()', $source);
+    }
 }

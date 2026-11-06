@@ -123,8 +123,9 @@ if (Params::getParam('export') === 'csv') {
                  . "FROM ($pool_sql) as p GROUP BY s_search ORDER BY $order_by";
         $res = $comm->query($csv_sql);
         if ($res) {
+            $rows = $res->result();
             $rank = 1;
-            while ($row = $res->row()) {
+            foreach ($rows as $row) {
                 fputcsv($out, array($rank++, $row['s_search'], $row['i_total'], $row['first_date'], $row['last_date']));
             }
         }
@@ -133,7 +134,8 @@ if (Params::getParam('export') === 'csv') {
         $csv_sql = "SELECT d_date, s_search FROM ($pool_sql) as p ORDER BY $order_by";
         $res = $comm->query($csv_sql);
         if ($res) {
-            while ($row = $res->row()) {
+            $rows = $res->result();
+            foreach ($rows as $row) {
                 fputcsv($out, array($row['d_date'], $row['s_search']));
             }
         }
