@@ -207,18 +207,8 @@ if ($poll_interval <= 0) $poll_interval = 4000;
                         <?php endforeach; ?>
                     </div>
 
-                    <!-- Selected Attachment Pill -->
-                    <div id="imAttachBadge" style="display: none; padding: 4px 14px; background: #e0f2fe; color: #0369a1; font-size: 12px; font-weight: 600; border-top: 1px solid #bae6fd;"></div>
-
                     <!-- Input Bar -->
                     <div class="im-input-bar">
-                        <?php if (osc_get_preference('im_attachments_enabled', 'instant_messenger')): ?>
-                            <input type="file" id="imFileInput" style="display: none;" accept="image/*,.pdf,.doc,.docx,.zip" />
-                            <button type="button" class="im-attach-btn" id="imAttachBtn" title="<?php _e('Attach photo or file', 'instant_messenger'); ?>">
-                                <i class="fa fa-paperclip"></i>
-                            </button>
-                        <?php endif; ?>
-
                         <textarea id="imMessageInput" placeholder="<?php echo osc_esc_html(__('Type your message... (Press Enter to send)', 'instant_messenger')); ?>"></textarea>
                         
                         <button type="button" class="im-send-btn" id="imSendBtn" title="<?php _e('Send', 'instant_messenger'); ?>">

@@ -12,7 +12,6 @@ if ($current_user_id > 0 && $current_user_id === (int)$seller_id) {
 
 $is_logged_in = osc_is_web_user_logged_in();
 $guest_enabled = osc_get_preference('im_guest_messaging', 'instant_messenger');
-$attachments_enabled = osc_get_preference('im_attachments_enabled', 'instant_messenger');
 $ajax_url = osc_base_url(true) . '?page=ajax';
 ?>
 
@@ -63,12 +62,7 @@ $ajax_url = osc_base_url(true) . '?page=ajax';
                     <textarea name="message" id="imModalMessage" required rows="4" placeholder="<?php echo osc_esc_html(__('Hello! Is this item still available?', 'instant_messenger')); ?>" style="width: 100%; border: 1px solid #cbd5e1; border-radius: 6px; padding: 10px; font-size: 14px; font-family: inherit; box-sizing: border-box;"></textarea>
                 </div>
 
-                <?php if ($attachments_enabled): ?>
-                    <div style="margin-bottom: 10px;">
-                        <label style="display: block; font-size: 12px; font-weight: 600; color: #334155; margin-bottom: 4px;"><?php _e('Attach Photo or Document (Optional)', 'instant_messenger'); ?></label>
-                        <input type="file" name="attachment" accept="image/*,.pdf,.doc,.docx,.zip" style="font-size: 12px; color: #64748b;" />
-                    </div>
-                <?php endif; ?>
+
 
                 <div id="imModalError" style="display: none; padding: 8px 12px; background: #fef2f2; border: 1px solid #fecaca; color: #dc2626; border-radius: 6px; font-size: 12px; margin-top: 10px;"></div>
             </div>

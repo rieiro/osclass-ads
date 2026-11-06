@@ -48,26 +48,7 @@
                 });
             }
 
-            // Attachment trigger
-            var attachBtn = document.getElementById("imAttachBtn");
-            var fileInput = document.getElementById("imFileInput");
-            var attachBadge = document.getElementById("imAttachBadge");
-            if (attachBtn && fileInput) {
-                attachBtn.addEventListener("click", function() {
-                    fileInput.click();
-                });
-                fileInput.addEventListener("change", function() {
-                    if (this.files && this.files[0]) {
-                        var file = this.files[0];
-                        attachBadge.innerHTML = '<i class="fa fa-paperclip"></i> ' + file.name + ' (' + Math.round(file.size / 1024) + ' KB) <span class="im-remove-file" style="cursor:pointer;color:#dc2626;margin-left:4px;">&times;</span>';
-                        attachBadge.style.display = "inline-block";
-                        attachBadge.querySelector(".im-remove-file").addEventListener("click", function() {
-                            fileInput.value = "";
-                            attachBadge.style.display = "none";
-                        });
-                    }
-                });
-            }
+
         },
 
         scrollToBottom: function() {
@@ -148,14 +129,10 @@
             if (this.isSending) return;
 
             var textarea = document.getElementById("imMessageInput");
-            var fileInput = document.getElementById("imFileInput");
-            var attachBadge = document.getElementById("imAttachBadge");
             var sendBtn = document.getElementById("imSendBtn");
 
             var text = textarea ? textarea.value.trim() : "";
-            var hasFile = (fileInput && fileInput.files && fileInput.files[0]);
-
-            if (!text && !hasFile) return;
+            if (!text) return;
 
             this.isSending = true;
             if (sendBtn) sendBtn.disabled = true;
@@ -187,9 +164,6 @@
             formData.append("action", "im_send_message");
             formData.append("thread_id", this.activeThreadId);
             formData.append("message", text);
-            if (hasFile) {
-                formData.append("attachment", fileInput.files[0]);
-            }
 
             fetch(this.ajaxUrl, {
                 method: "POST",
@@ -200,8 +174,6 @@
                 self.isSending = false;
                 if (sendBtn) sendBtn.disabled = false;
                 if (data.status === "ok") {
-                    if (fileInput) fileInput.value = "";
-                    if (attachBadge) attachBadge.style.display = "none";
                     if (data.msg_id) {
                         if (data.msg_id > self.lastMessageId) {
                             self.lastMessageId = data.msg_id;

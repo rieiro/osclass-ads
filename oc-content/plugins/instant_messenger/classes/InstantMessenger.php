@@ -74,7 +74,7 @@ class InstantMessenger extends DAO {
         ) ENGINE=InnoDB DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;");
 
         osc_set_preference('im_guest_messaging', '1', 'instant_messenger', 'BOOLEAN');
-        osc_set_preference('im_attachments_enabled', '1', 'instant_messenger', 'BOOLEAN');
+        osc_set_preference('im_attachments_enabled', '0', 'instant_messenger', 'BOOLEAN');
         osc_set_preference('im_allowed_ext', 'jpg,jpeg,png,gif,webp,pdf,doc,docx,zip', 'instant_messenger', 'STRING');
         osc_set_preference('im_max_file_size', '5', 'instant_messenger', 'INTEGER');
         osc_set_preference('im_poll_interval', '4', 'instant_messenger', 'INTEGER');

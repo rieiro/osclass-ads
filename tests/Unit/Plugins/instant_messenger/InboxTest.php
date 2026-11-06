@@ -24,4 +24,14 @@ final class InboxTest extends DatabaseTestCase
         $this->assertStringContainsString("isFetching", $jsSource);
         $this->assertStringContainsString("isSending", $jsSource);
     }
+
+    public function testFileAttachmentsAreRemovedFromInboxAndMessenger(): void
+    {
+        $inboxSource = (string) file_get_contents(ABS_PATH . "src/Plugins/instant_messenger/inbox.php");
+        $this->assertStringNotContainsString("imFileInput", $inboxSource);
+        $this->assertStringNotContainsString("imAttachBtn", $inboxSource);
+
+        $jsSource = (string) file_get_contents(ABS_PATH . "src/Plugins/instant_messenger/assets/js/messenger.js");
+        $this->assertStringNotContainsString("imAttachBtn", $jsSource);
+    }
 }
