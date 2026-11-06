@@ -118,7 +118,7 @@ if ($poll_interval <= 0) $poll_interval = 4000;
 
         <!-- Input Bar -->
         <div class="im-input-bar">
-            <textarea id="imMessageInput" placeholder="<?php echo osc_esc_html(__('Type your message... (Press Enter to send)', 'instant_messenger')); ?>"></textarea>
+            <textarea id="imMessageInput" style="overflow-y: hidden; resize: none;" placeholder="<?php echo osc_esc_html(__('Type your message... (Press Enter to send)', 'instant_messenger')); ?>"></textarea>
             
             <button type="button" class="im-send-btn" id="imSendBtn" title="<?php _e('Send', 'instant_messenger'); ?>">
                 <i class="fa fa-paper-plane"></i>

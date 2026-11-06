@@ -34,4 +34,12 @@ final class InboxTest extends DatabaseTestCase
         $jsSource = (string) file_get_contents(ABS_PATH . "src/Plugins/instant_messenger/assets/js/messenger.js");
         $this->assertStringNotContainsString("imAttachBtn", $jsSource);
     }
+
+    public function testInputBarTextareaHidesVerticalScrollbar(): void
+    {
+        $cssSource = (string) file_get_contents(ABS_PATH . "src/Plugins/instant_messenger/assets/css/messenger.css");
+        $this->assertStringContainsString(".im-input-bar textarea", $cssSource);
+        $this->assertStringContainsString("overflow-y: hidden", $cssSource);
+        $this->assertStringContainsString("scrollbar-width: none", $cssSource);
+    }
 }

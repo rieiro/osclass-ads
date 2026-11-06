@@ -325,16 +325,29 @@
     gap: 10px;
 }
 .im-input-bar textarea {
-    flex: 1;
-    height: 40px;
-    max-height: 100px;
-    padding: 10px 14px;
-    border: 1px solid #cbd5e1;
-    border-radius: 20px;
-    font-size: 14px;
-    resize: none;
-    outline: none;
-    font-family: inherit;
+    flex: 1 !important;
+    height: 42px !important;
+    min-height: 42px !important;
+    max-height: 100px !important;
+    padding: 10px 16px !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 22px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    resize: none !important;
+    outline: none !important;
+    font-family: inherit !important;
+    overflow-y: hidden !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    box-sizing: border-box !important;
+    float: none !important;
+    margin: 0 !important;
+}
+.im-input-bar textarea::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
 }
 .im-input-bar textarea:focus {
     border-color: var(--im-primary);
