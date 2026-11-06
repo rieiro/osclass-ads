@@ -100,6 +100,18 @@ $savedAttrs = !empty($profile['s_attributes']) ? json_decode((string)$profile['s
 ?>
 
 <div class="bp-manage-form" style="max-width: 900px; margin: 30px auto; padding: 25px; background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); font-family: system-ui, -apple-system, sans-serif;">
+    <style>
+        .bp-manage-form * { box-sizing: border-box !important; }
+        .bp-manage-form label { float: none !important; display: block !important; width: 100% !important; clear: both !important; margin-bottom: 6px !important; font-size: 13px !important; font-weight: 700 !important; color: #334155 !important; line-height: normal !important; }
+        .bp-manage-form input[type="text"],
+        .bp-manage-form input[type="url"],
+        .bp-manage-form input[type="email"],
+        .bp-manage-form textarea { float: none !important; display: block !important; width: 100% !important; height: 42px !important; margin: 0 !important; padding: 10px 12px !important; border: 1px solid #cbd5e1 !important; border-radius: 6px !important; background: #ffffff !important; box-sizing: border-box !important; clear: both !important; font-size: 14px !important; line-height: normal !important; }
+        .bp-manage-form textarea { height: 100px !important; resize: none !important; }
+        .bp-grid-2 { display: flex !important; gap: 16px !important; clear: both !important; width: 100% !important; margin-bottom: 16px !important; }
+        .bp-grid-2 > div { flex: 1 1 50% !important; min-width: 0 !important; box-sizing: border-box !important; }
+        .bp-field { margin-bottom: 16px !important; clear: both !important; width: 100% !important; }
+    </style>
     <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #f1f5f9; padding-bottom: 16px; margin-bottom: 24px;">
         <div>
             <h1 style="margin: 0; font-size: 24px; font-weight: 800; color: #0f172a;">Business Profile Management</h1>
@@ -119,66 +131,66 @@ $savedAttrs = !empty($profile['s_attributes']) ? json_decode((string)$profile['s
         <!-- 1. Identity & Branding -->
         <h2 style="font-size: 17px; font-weight: 700; color: #1e293b; margin: 0 0 16px 0; border-left: 4px solid #4f46e5; padding-left: 10px;">Company Branding</h2>
         <div class="bp-group-branding" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-bottom: 24px;">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+            <div class="bp-grid-2">
                 <div>
-                    <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Company / Store Name *</label>
-                    <input type="text" name="s_company_name" value="<?php echo osc_esc_html($profile['s_company_name'] ?? osc_logged_user_name()); ?>" required style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+                    <label>Company / Store Name *</label>
+                    <input type="text" name="s_company_name" value="<?php echo osc_esc_html($profile['s_company_name'] ?? osc_logged_user_name()); ?>" required />
                 </div>
                 <div>
-                    <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Store URL Slug (unique) *</label>
-                    <input type="text" name="s_slug" value="<?php echo osc_esc_html($profile['s_slug'] ?? ''); ?>" placeholder="e.g. joao-motors" required style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+                    <label>Store URL Slug (unique) *</label>
+                    <input type="text" name="s_slug" value="<?php echo osc_esc_html($profile['s_slug'] ?? ''); ?>" placeholder="e.g. joao-motors" required />
                 </div>
             </div>
 
-            <div style="margin-bottom: 16px;">
-                <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Tagline / Slogan</label>
-                <input type="text" name="s_tagline" value="<?php echo osc_esc_html($profile['s_tagline'] ?? ''); ?>" placeholder="e.g. Authorized dealer since 2010" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+            <div class="bp-field">
+                <label>Tagline / Slogan</label>
+                <input type="text" name="s_tagline" value="<?php echo osc_esc_html($profile['s_tagline'] ?? ''); ?>" placeholder="e.g. Authorized dealer since 2010" />
             </div>
 
-            <div style="margin-bottom: 16px;">
-                <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">About / Company Bio</label>
-                <textarea name="s_bio" rows="4" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; resize: none;"><?php echo osc_esc_html($profile['s_bio'] ?? ''); ?></textarea>
+            <div class="bp-field">
+                <label>About / Company Bio</label>
+                <textarea name="s_bio" rows="4" style="resize: none;"><?php echo osc_esc_html($profile['s_bio'] ?? ''); ?></textarea>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="bp-grid-2">
                 <div>
-                    <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Logo Image URL</label>
-                    <input type="url" name="s_logo_url" value="<?php echo osc_esc_html($profile['s_logo_url'] ?? ''); ?>" placeholder="https://..." style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+                    <label>Logo Image URL</label>
+                    <input type="url" name="s_logo_url" value="<?php echo osc_esc_html($profile['s_logo_url'] ?? ''); ?>" placeholder="https://..." />
                 </div>
                 <div>
-                    <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Cover Banner URL</label>
-                    <input type="url" name="s_banner_url" value="<?php echo osc_esc_html($profile['s_banner_url'] ?? ''); ?>" placeholder="https://..." style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+                    <label>Cover Banner URL</label>
+                    <input type="url" name="s_banner_url" value="<?php echo osc_esc_html($profile['s_banner_url'] ?? ''); ?>" placeholder="https://..." />
                 </div>
             </div>
         </div>
 
         <!-- 2. Contacts & Location -->
         <h2 style="font-size: 17px; font-weight: 700; color: #1e293b; margin: 0 0 16px 0; border-left: 4px solid #4f46e5; padding-left: 10px;">Contact & Location</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+        <div class="bp-grid-2">
             <div>
-                <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">WhatsApp Number (for 1-click chat)</label>
-                <input type="text" name="s_whatsapp" value="<?php echo osc_esc_html($profile['s_whatsapp'] ?? ''); ?>" placeholder="11988887777" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+                <label>WhatsApp Number (for 1-click chat)</label>
+                <input type="text" name="s_whatsapp" value="<?php echo osc_esc_html($profile['s_whatsapp'] ?? ''); ?>" placeholder="11988887777" />
             </div>
             <div>
-                <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Landline Phone</label>
-                <input type="text" name="s_phone" value="<?php echo osc_esc_html($profile['s_phone'] ?? ''); ?>" placeholder="1133334444" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
-            </div>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
-            <div>
-                <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Official Website</label>
-                <input type="url" name="s_website" value="<?php echo osc_esc_html($profile['s_website'] ?? ''); ?>" placeholder="https://mycompany.com" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
-            </div>
-            <div>
-                <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Public Email</label>
-                <input type="email" name="s_email" value="<?php echo osc_esc_html($profile['s_email'] ?? ''); ?>" placeholder="contact@mycompany.com" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+                <label>Landline Phone</label>
+                <input type="text" name="s_phone" value="<?php echo osc_esc_html($profile['s_phone'] ?? ''); ?>" placeholder="1133334444" />
             </div>
         </div>
 
-        <div style="margin-bottom: 24px;">
-            <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Physical Address</label>
-            <input type="text" name="s_address" value="<?php echo osc_esc_html($profile['s_address'] ?? ''); ?>" placeholder="Av. Paulista, 1000 - Sao Paulo, SP" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+        <div class="bp-grid-2">
+            <div>
+                <label>Official Website</label>
+                <input type="url" name="s_website" value="<?php echo osc_esc_html($profile['s_website'] ?? ''); ?>" placeholder="https://mycompany.com" />
+            </div>
+            <div>
+                <label>Public Email</label>
+                <input type="email" name="s_email" value="<?php echo osc_esc_html($profile['s_email'] ?? ''); ?>" placeholder="contact@mycompany.com" />
+            </div>
+        </div>
+
+        <div class="bp-field" style="margin-bottom: 24px;">
+            <label>Physical Address</label>
+            <input type="text" name="s_address" value="<?php echo osc_esc_html($profile['s_address'] ?? ''); ?>" placeholder="Av. Paulista, 1000 - Sao Paulo, SP" />
         </div>
 
         <!-- 3. Opening Hours Schedule -->

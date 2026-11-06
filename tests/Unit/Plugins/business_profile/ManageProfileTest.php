@@ -47,4 +47,13 @@ final class ManageProfileTest extends DatabaseTestCase
         $this->assertStringContainsString("bp-group-branding", $source);
         $this->assertMatchesRegularExpression("/<div[^>]*class=['\"][^>]*bp-group-branding[^>]*>.*?s_logo_url.*?s_banner_url.*?<\/div>/s", $source);
     }
+
+    public function testBrandingFieldsHaveResetFloatAndGridStyles(): void
+    {
+        $path = ABS_PATH . "src/Plugins/business_profile/manage_profile.php";
+        $source = (string) file_get_contents($path);
+
+        $this->assertStringContainsString("float: none !important", $source);
+        $this->assertStringContainsString("bp-grid-2", $source);
+    }
 }
