@@ -50,4 +50,32 @@ final class InstantMessengerTest extends DatabaseTestCase
         $im->unblockUser((int) $u1["pk_i_id"], (int) $u2["pk_i_id"]);
         $this->assertFalse($im->isBlocked((int) $u1["pk_i_id"], (int) $u2["pk_i_id"]));
     }
+
+    public function testSendMessageDeduplicatesRapidSubmissions(): void
+    {
+        $seller = UserFactory::create(["s_name" => "Seller IM2"]);
+        $buyer = UserFactory::create(["s_name" => "Buyer IM2"]);
+        $item = ItemFactory::create(["fk_i_user_id" => $seller["pk_i_id"]]);
+
+        $im = InstantMessenger::newInstance();
+        $threadId = (int) $im->getOrCreateThread(
+            (int) $item["pk_i_id"],
+            (int) $buyer["pk_i_id"],
+            (string) $buyer["s_name"],
+            (string) $buyer["s_email"],
+            (int) $seller["pk_i_id"],
+            (string) $seller["s_name"],
+            (string) $seller["s_email"],
+            "Duplicate Test"
+        );
+
+        $msg1 = $im->sendMessage($threadId, (int) $buyer["pk_i_id"], (string) $buyer["s_name"], (string) $buyer["s_email"], "abc");
+        $msg2 = $im->sendMessage($threadId, (int) $buyer["pk_i_id"], (string) $buyer["s_name"], (string) $buyer["s_email"], "abc");
+
+        $this->assertNotFalse($msg1);
+        $this->assertSame($msg1, $msg2, "Rapid duplicate message submission must return the original message ID");
+
+        $messages = $im->getMessages($threadId);
+        $this->assertSame(1, count($messages), "Rapid duplicate message must not create a duplicate row in the database");
+    }
 }

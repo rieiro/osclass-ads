@@ -78,7 +78,7 @@ if ($poll_interval <= 0) $poll_interval = 4000;
                 $ext = $att_url ? strtolower(pathinfo($m['attachment'], PATHINFO_EXTENSION)) : '';
                 $is_img = in_array($ext, array('jpg', 'jpeg', 'png', 'gif', 'webp'));
             ?>
-                <div class="im-msg-row <?php echo $is_me ? 'me' : 'other'; ?>">
+                <div class="im-msg-row <?php echo $is_me ? 'me' : 'other'; ?>" id="imMsg_<?php echo (int)$m['id']; ?>" data-msg-id="<?php echo (int)$m['id']; ?>">
                     <div class="im-msg-bubble">
                         <?php if (!empty($m['message'])): ?>
                             <div><?php echo nl2br(htmlspecialchars($m['message'])); ?></div>

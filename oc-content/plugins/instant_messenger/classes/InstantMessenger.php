@@ -247,6 +247,24 @@ class InstantMessenger extends DAO {
             }
         }
 
+        // Double-submission guard (same thread, sender, and message within last 3 seconds)
+        if (!empty($message)) {
+            $esc_msg = $this->dao->escape($message);
+            $check_sql = sprintf(
+                "SELECT id FROM %st_im_messages WHERE thread_id = %d AND sender_id = %d AND message = %s AND created_at >= '%s' ORDER BY id DESC LIMIT 1",
+                DB_TABLE_PREFIX,
+                $thread_id,
+                (int)$sender_id,
+                $esc_msg,
+                date('Y-m-d H:i:s', time() - 3)
+            );
+            $dup = $this->dao->query($check_sql);
+            if ($dup && $dup->numRows() > 0) {
+                $dup_row = $dup->row();
+                return (int)$dup_row['id'];
+            }
+        }
+
         // Insert message
         $this->dao->insert(DB_TABLE_PREFIX . 't_im_messages', array(
             'thread_id'           => $thread_id,
