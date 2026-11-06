@@ -22,6 +22,7 @@ if (!class_exists(TestCase::class, false)) {
         public static function assertArrayHasKey(mixed $key, mixed $array, string $message = ""): void {}
         public static function assertContains(mixed $needle, mixed $haystack, string $message = ""): void {}
         public static function assertStringStartsWith(string $prefix, string $string, string $message = ""): void {}
+        public static function assertMatchesRegularExpression(string $pattern, string $string, string $message = ""): void {}
         public static function assertStringContainsString(string $needle, string $haystack, string $message = ""): void {}
         public static function assertStringNotContainsString(string $needle, string $haystack, string $message = ""): void {}
         public static function assertFileExists(string $filename, string $message = ""): void {}

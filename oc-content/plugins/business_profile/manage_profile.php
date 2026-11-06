@@ -118,35 +118,37 @@ $savedAttrs = !empty($profile['s_attributes']) ? json_decode((string)$profile['s
 
         <!-- 1. Identity & Branding -->
         <h2 style="font-size: 17px; font-weight: 700; color: #1e293b; margin: 0 0 16px 0; border-left: 4px solid #4f46e5; padding-left: 10px;">Company Branding</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
-            <div>
-                <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Company / Store Name *</label>
-                <input type="text" name="s_company_name" value="<?php echo osc_esc_html($profile['s_company_name'] ?? osc_logged_user_name()); ?>" required style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+        <div class="bp-group-branding" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-bottom: 24px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+                <div>
+                    <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Company / Store Name *</label>
+                    <input type="text" name="s_company_name" value="<?php echo osc_esc_html($profile['s_company_name'] ?? osc_logged_user_name()); ?>" required style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+                </div>
+                <div>
+                    <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Store URL Slug (unique) *</label>
+                    <input type="text" name="s_slug" value="<?php echo osc_esc_html($profile['s_slug'] ?? ''); ?>" placeholder="e.g. joao-motors" required style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+                </div>
             </div>
-            <div>
-                <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Store URL Slug (unique) *</label>
-                <input type="text" name="s_slug" value="<?php echo osc_esc_html($profile['s_slug'] ?? ''); ?>" placeholder="e.g. joao-motors" required style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+
+            <div style="margin-bottom: 16px;">
+                <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Tagline / Slogan</label>
+                <input type="text" name="s_tagline" value="<?php echo osc_esc_html($profile['s_tagline'] ?? ''); ?>" placeholder="e.g. Authorized dealer since 2010" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
             </div>
-        </div>
 
-        <div style="margin-bottom: 16px;">
-            <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Tagline / Slogan</label>
-            <input type="text" name="s_tagline" value="<?php echo osc_esc_html($profile['s_tagline'] ?? ''); ?>" placeholder="e.g. Authorized dealer since 2010" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
-        </div>
-
-        <div style="margin-bottom: 16px;">
-            <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">About / Company Bio</label>
-            <textarea name="s_bio" rows="4" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;"><?php echo osc_esc_html($profile['s_bio'] ?? ''); ?></textarea>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px;">
-            <div>
-                <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Logo Image URL</label>
-                <input type="url" name="s_logo_url" value="<?php echo osc_esc_html($profile['s_logo_url'] ?? ''); ?>" placeholder="https://..." style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+            <div style="margin-bottom: 16px;">
+                <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">About / Company Bio</label>
+                <textarea name="s_bio" rows="4" style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; resize: none;"><?php echo osc_esc_html($profile['s_bio'] ?? ''); ?></textarea>
             </div>
-            <div>
-                <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Cover Banner URL</label>
-                <input type="url" name="s_banner_url" value="<?php echo osc_esc_html($profile['s_banner_url'] ?? ''); ?>" placeholder="https://..." style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div>
+                    <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Logo Image URL</label>
+                    <input type="url" name="s_logo_url" value="<?php echo osc_esc_html($profile['s_logo_url'] ?? ''); ?>" placeholder="https://..." style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+                </div>
+                <div>
+                    <label style="display: block; font-size: 13px; font-weight: 700; color: #334155; margin-bottom: 6px;">Cover Banner URL</label>
+                    <input type="url" name="s_banner_url" value="<?php echo osc_esc_html($profile['s_banner_url'] ?? ''); ?>" placeholder="https://..." style="width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box;" />
+                </div>
             </div>
         </div>
 

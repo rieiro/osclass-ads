@@ -34,4 +34,17 @@ final class ManageProfileTest extends DatabaseTestCase
         $this->assertStringNotContainsString("osc_current_web_theme_path('header.php')", $source);
         $this->assertStringNotContainsString("osc_current_web_theme_path('footer.php')", $source);
     }
+
+    public function testBioIsNotResizableAndBrandingInputsAreGrouped(): void
+    {
+        $path = ABS_PATH . "src/Plugins/business_profile/manage_profile.php";
+        $source = (string) file_get_contents($path);
+
+        // 1. Bio textarea should not be resizable
+        $this->assertMatchesRegularExpression("/<textarea[^>]*name=['\"]s_bio['\"][^>]*style=['\"][^>]*resize:\s*none/i", $source);
+
+        // 2. Logo and banner boxes should be inside the main branding group container
+        $this->assertStringContainsString("bp-group-branding", $source);
+        $this->assertMatchesRegularExpression("/<div[^>]*class=['\"][^>]*bp-group-branding[^>]*>.*?s_logo_url.*?s_banner_url.*?<\/div>/s", $source);
+    }
 }
