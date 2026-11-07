@@ -9,7 +9,7 @@ define('DB_USER', 'osclass');
 define('DB_PASSWORD', 'OsclassPass2026!');
 
 // MySql database name
-$__is_factory_test = (getenv('APP_ENV') === 'testing') || (isset($_SERVER['HTTP_X_FACTORY_ENV']) && $_SERVER['HTTP_X_FACTORY_ENV'] === 'testing' && in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1', '192.168.122.1', '192.168.122.222'], true));
+$__is_factory_test = (getenv('APP_ENV') === 'testing') || (isset($_SERVER['HTTP_X_FACTORY_ENV']) && $_SERVER['HTTP_X_FACTORY_ENV'] === 'testing' && in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1', '192.168.122.1', '192.168.122.222', '10.64.215.1', '10.64.215.222'], true));
 define('DB_NAME', $__is_factory_test ? 'osclass_testing' : 'osclass');
 if ($__is_factory_test && !defined('OC_TEST_MODE')) { define('OC_TEST_MODE', true); }
 
@@ -20,7 +20,7 @@ define('DB_TABLE_PREFIX', 'oc_');
 define('REL_WEB_URL', '/');
 
 // Web address - modify here for SSL version of site
-define('WEB_PATH', 'https://192.168.122.222/');
+define('WEB_PATH', 'https://10.64.215.222/');
 
 
 // *************************************** //
